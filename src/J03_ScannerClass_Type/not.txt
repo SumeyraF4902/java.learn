@@ -1,0 +1,435 @@
+/* java escape special characters -> https://www.w3schools.com/java/java_strings_specchars.asp
+​
+	  \n (or \r): starts from a new line : metni bir alt satırdan itibaren yazdırır.
+	          \t:  horizontal tab : metni yatayda 1 tab miktarı kaydırır.
+	          \\: prints a back slash :\ (ters slash) yazdırır
+	          \': prints single quote :' tek tırnak yazdırır.
+	          \": prints double quote :"" Çift tırnak yazdırır.
+	 */
+​
+
+	public static void main(String[] args) {
+		//  Soru-1 :   konsola      "Hello ", "World  \ /"        seklinde yazdırınız
+​
+​
+		// Soru-2 : Pazartesi kelimesini her harfini ayrı bir satira gelecek sekilde yazdırınız.
+​
+​
+		//Soru-3 : "Java" ile hayat cok 'afilli'   yazdırınız
+​
+​
+		//Soru-4 : "Basari" gayrete
+		// 'asiktir'  yazdırınız sonraki "Clarusway ile java cok kolay ..." ifadesi  3 satır sonra ve satır basından 1 tab ileride yazılsın.
+​
+​
+	}
+
+	public class Task02 {
+        public static void main(String[] args) {
+            /*
+            TASK:
+    		 * Sadece System.out.println kullanarak bu işlemleri yapınız.
+             *    Herhangi bir değişken kullanmayın.
+             * 1. Adım : İsim ve Soyismiminizi ekrana yazdırın.
+             * 2. Adım : Satır atlayarak boyunuzu ekrana yazdırın.
+             * 3. Adım : Satır atlayarak kilonu ekrana yazdırın.
+             * 4. Adım : Satır atlayarak hobilerinizi ekrana yazdırın.
+    ​
+    	             OUTPUT :
+    	             Haluk Bilgin
+    	             190
+    	             99
+    	             Yuzme FUTBOL Java ...
+    		 */
+        }
+ public static void main(String[] args) {//main method başı
+        System.out.println("hello world");
+        /*
+        çoklu satır yorum(multi-line comment)..
+        başarı gayrete aşıktır
+        bahanesi olanın başarısı olmaz..
+         */
+​
+        // burası sadete tek satır(single-line comment) yorum alır. alt satıra geçilirse komut olarak tanımlanır...
+​
+        /*
+        Java run edildiğinde çalışmaya ilk önce main method'dan başlar
+        daha sonra yukarıdan aşağıya ve soldan sağa soğru sırasıyla code'ları çalıştırır
+         */
+        System.out.println("javaCAN'lara selam olsun :) ");// ; " ) unut hata al run et konsolda  problems de pencere aç göster
+        System.out.print("java bilen sırtı yere gelmez...");
+        System.out.println("başarı gayrete aşıktır");
+        // TRICK :)
+        //Java code satırı  cumle(Statement) sonuna mutlaka  ";" koyulmalı.
+        //Code'da  kirmizi alt cizgi görülmesi "Compile Time Error" CTE hatası uyarısı demektir.
+        //Bu hatayi duzetlmeden(handle) baska kod yazmayınız...
+​
+        /* TRICK :)
+        print -> yazdırma işleminden sonra bir sonraki komutu AYNI satırdan devam ettirir
+        println -> yazdırma işleminden sonra bir sonraki komutu ALT satırdan devam ettirir
+​
+         */
+​
+​
+         /*
+        TASK :
+        Adınızı soyadınızı yaş memeleket ve mesleğinizi console'a yazdırınız... alt alta ve yanyana yazdırınız..
+        TRICK : Java'da space(boşluk) bir character olarak tanımlanır.
+        h a l u k -> 9 karakterli bir ifadedir
+​
+         */
+    }//main method sonu
+}//class sonu
+
+public class C02_VariableCreate {
+    public static void main(String[] args) {
+        // variable create(Değişken oluşturmak) için..
+        // 1- Datatype(Değişken türü) VariableName(Değişken ismi) "=" value(değişken değeri) ";"
+        //             int                  yas                    =  48  ;
+        //                Declaration(Tanımlama)                   =  Assaignment(Atama)
+​
+        //1. yol-> best practice(Recommended) tavsiye eilen..
+        int yas=48;
+        int maas=108000;
+        System.out.println(yas);//48
+        System.out.println("yasınız : "+yas);//yasınız : 48
+        System.out.println(maas);//108000
+        System.out.println("maasınız :"+maas);//maasınız : 108000
+​
+        //2. yol->
+        int boy;// variable declaration -> değişken tanımlama
+        //KING of TRICK :)
+        //System.out.println(boy);// değer ataması yapılmadan bir variable herhangi bir işlem(axion)a alınamaz CTE
+        boy=190; // variable value assaignment -> değişkene değer ataması
+        System.out.println(boy);//190
+​
+        //3 .yol->
+      //  int age,yevmiye,kilo;Aynı data türünde birden fazla variable tek komutla declare edilebilir.
+      //  age=33;
+      //  yevmiye=500;
+      //  kilo=90;
+        int age=33,yevmiye=500,kilo=90;//5- Aynı data türünde birden fazla variable tek komutla declare edilip değer atanabilir.
+​
+        /*
+        Bir variable declare edildikten sonra istenildiği kadar değer dğiştirilebilir
+         */
+        age=40;
+        System.out.println("yeni age : "+age);//yeni age : 40
+        /*
+       CISS :(  variable declare edildikten sonra tekrar declare EDİLMEZZZ ->CTE
+         */
+       // int age; -> dublicate variable declaration CTE
+​
+    }
+} Java'da  2 farkli data type vardir.
+ 		 1)Primitive Data Type (8 tane)
+ ​
+ 		   a)boolean: Sadece True veya False değerlerini alabilir. sadece iki farkli deger alabildigi icin memory'de az(bir bit'lik) alan kaplar
+ ​
+ 		   b)char :Tek character'li (S, ?, 3, * gibi her bir sembol) ifadeler icin char data type'i kullanilir.
+ 		   		her bir char memory'de 16 bit'lik yer kaplar.char deger mutlaka tek tirnak icine konulmalıdilir.
+ 		   		char değerler aritmetik islemler için charlarin ASCII ("American Standard Code for Information Interchange") Table'daki degerlerini alır.
+ ​
+ 		   c)byte : -128'den +127 ye kadar tum tam sayi degerlerini alır.
+ 		   		byte variable -> memory'de 8 bitlik alan kaplar.
+ ​
+ 		   d)short : -32768'den 32767'ye kadar tum tam sayi degerlerini alır.
+ 		   		short variable -> memory'de 16 bıt alan kaplar.
+ ​
+ 		   e)int : -2,147,483,648'den 2,147,483,647'ye kadar tum tam sayi degerlerini alır.
+ 		  		int variable -> memory'de 32 bit alan kaplar.
+ ​
+ 		   f)long : -9,223,372,036,854,755,808'den 9,223,372,036,854,755,807'ye kadar tum tam sayi degerlerini alır.
+ 		   		long variable -> memory'de 64 bit alan kaplar.
+ ​
+ 		   g)float : ondalikli sayilar icin kullanilır.
+ 		   		float variable -> memory'de 32 bit kullanir.
+ 		   		float variable -> ondalik kisimlarinda en fazla 7 rakam barindirabilir.
+ 		   		0.1234567
+ 		   		Bir ondalikli sayinin float oldugunu belirlemek icin en sona(1.23f veya 1.23F) 'f' veya 'F' yazılmalıdır aksi halde variable double olarak tanımlanır.
+ ​
+ ​
+ 		   h)double : ondalikli sayilar icin kullanılır.
+ 		   		double variable -> memory'de 64 bit kullanir.
+ 		 		double variable -> ondalik kisimlarinda en fazla 16 rakam barindirabilirler.
+ 		 		0.1234567890123456
+ ​
+ 		 2)Non-Primitive Data Type
+ 		 	String: Cift tirnak arasina yazilan sifir veya daha fazla character'lerden olusan variable.
+ 		          String name = "özgür";
+                  String yas = "13";
+                  int age = 34;
+                  int yil = 22;
+                  boolean emekliMi = true;
+                  boolean ıtci = false;
+                  char ch = '$';
+                  char hrf = 'A';
+          ​
+                  //TASK -> 1999 yılında doğan bir kişinin yaşını yazdırınız...
+                  int dTarihi = 1999;
+                  int buYil = 2022;
+                  int yasınız = buYil - dTarihi;
+                  System.out.println(yasınız);
+          ​
+                  float f1 = 12.45f;
+                  float f2 = 23.56F;
+                  double boy = 1.85;
+                  System.out.println(f1 * f2); // 12.45* 23.56 =293.322
+          ​
+                  //Task -> iki farklı byte tanımlayıp toplam farkını print ediniz
+                  //byte a=23,b=44;
+                  byte a = 23;
+                  byte b = 44;
+                  System.out.println(a + b);//67
+                  System.out.println(a - b);//-11
+          ​
+                  //Task -> iki farklı tamsayı türünde sayı  tanımlayıp toplam farkını print ediniz
+                  int c = 1453;
+                  byte d = 34;
+                  System.out.println(c+d);// 1487
+          ​
+                  //Task -> tamsayı ve ondalıklı sayı tanımlayıp toplam  print ediniz
+                  int n=33;
+                  double m=14.53;
+                  System.out.println(n+m); //47.53--> 33.0+14.53
+          ​
+                  //Task -> tamsayı ve char data type iki variable  tanımlayıp toplam  print ediniz
+                  int sayi=63;
+                  char para='$';
+                  System.out.println(sayi+para);//63+36=99--> $ ascii değeri 36 olarak aritmetik işleme girdi
+
+                  // Task ad ve soyadınızı ve yasınızı print ediniz.
+
+          ​
+              }
+          }
+          package j02_DataTypes_WrapperClass;
+          ​
+          public class C03_Concatenation {
+              public static void main(String[] args) {
+          ​
+                  String ad = "Haluk";
+                  String soyad = "Bilgin";
+          ​
+                  int a = 7;
+                  int b = 11;
+          // Birden çok String variable ile farklı data type  variable'ler + ile işleme alınırsa
+          // java birleştirme yaparak yeni bir String oluşturur
+          ​
+                  System.out.println(ad+soyad+a+b);//HalukBilgin711
+          ​
+                  System.out.println(a+ad+soyad+b);//7HalukBilgin11
+          ​
+                  System.out.println(a+b+ad+soyad);//18HalukBilgin
+          ​
+                  System.out.println(" "+a+b);// 711
+          ​
+                  System.out.println(ad+soyad+(a+b));//HalukBilgin18
+          ​
+                  System.out.println((a+b)+ad+soyad);//18HalukBilgin
+          ​
+                  System.out.println(ad+(a-b)+(a-b));//Haluk-4-4
+          ​
+                  System.out.println(ad+((a-b)+(a-b)));//Haluk-8
+          ​
+                  char ch='1';//
+                  System.out.println(ad+ch);//Haluk1
+          ​
+                  System.out.println(a+ch+ad);//56Haluk
+          ​
+                  System.out.println(ad+(ch+b));//Haluk60
+          ​
+                  System.out.println(a+ad+ch);//7Haluk1
+          ​
+                /* TRICK -> char data turu isleme girdigi variables'in turune gore farkli işlem yapar
+                  eger isleme girdigi variables  aritmetik bir islemse  ascii değeri ile işelm yapar ->
+                 */
+                 package j02_DataTypes_WrapperClass;
+                 ​
+                 public class C04_WrapperClass {
+                 ​
+                     public static void main(String[] args) {
+                         String name = "Haluk";
+                         int yas = 33;
+                 ​
+                         System.out.println(name.toUpperCase());//HALUK
+                 ​
+                         // non-primitive data turleri data depolamak yaninda kullanışlı birçok method'a sahiptir
+                         // ancak primitive data turlerinin boyle bir ozelligi yoktur
+                         // primitive data turleri sadece degerleri saklarlar (container) ve hwerhangi bir özellik(method) vs bulundurmaz.
+                         //Ancak primitive data turleri icin de bazi işlemler için (String'den tamsayı çekme) method'lar ihtiyaç
+                         // olduğunda Java her bir primitive data turunu, non-primitive  Wrapper Class  oluşturarak ilgili methodlarla
+                         // ara çözüm imkanı sunmuştur.
+                 ​
+                         //TASK id ve tc String değerlernin toplamını print eden code yazınız
+                         String tc ="1234455";
+                         String id="98765";
+                         System.out.println(tc+id);//concat-> birleştirme : 123445598765
+                 ​
+                       int yeniTC=  Integer.valueOf(tc);// tc String değerini int cevirdi ve yeniTC'ye atadı
+                         System.out.println("yeniTC = " + yeniTC);
+                 ​
+                         int yeniId=  Integer.valueOf(id);// tc String değerini int cevirdi ve yeniId'ye atadı
+                         System.out.println("yeniId = " + yeniId);
+                 ​
+                         System.out.println(yeniId+yeniTC);// aritmetik toplama->1333220
+                         String okulNo="234543l";
+                         int yeniOkulNo= Integer.valueOf(okulNo);// run time Exception-> çalışma zamanı hatası
+                         System.out.println("yeniOkulNo = " + yeniOkulNo);
+                     }
+                 }
+                 public class C04_WrapperClass {
+                 ​
+                     public static void main(String[] args) {
+                         String name = "Haluk";
+                         int yas = 33;
+                 ​
+                         System.out.println(name.toUpperCase());//HALUK
+                 ​
+                         // non-primitive data turleri data depolamak yaninda kullanışlı birçok method'a sahiptir
+                         // ancak primitive data turlerinin boyle bir ozelligi yoktur
+                         // primitive data turleri sadece degerleri saklarlar (container) ve hwerhangi bir özellik(method) vs bulundurmaz.
+                         //Ancak primitive data turleri icin de bazi işlemler için (String'den tamsayı çekme) method'lar ihtiyaç
+                         // olduğunda Java her bir primitive data turunu, non-primitive  Wrapper Class  oluşturarak ilgili methodlarla
+                         // ara çözüm imkanı sunmuştur.
+                 ​
+                         //TASK id ve tc String değerlernin toplamını print eden code yazınız
+                         String tc = "1234455";
+                         String id = "98765";
+                         System.out.println(tc + id);//concat-> birleştirme : 123445598765
+                 ​
+                         int yeniTC = Integer.valueOf(tc);// tc String değerini int cevirdi ve yeniTC'ye atadı
+                         System.out.println("yeniTC = " + yeniTC);
+                 ​
+                         int yeniId = Integer.valueOf(id);// tc String değerini int cevirdi ve yeniId'ye atadı
+                         System.out.println("yeniId = " + yeniId);
+                 ​
+                         System.out.println(yeniId + yeniTC);// aritmetik toplama->1333220
+                         String okulNo = "234543A";
+                         //int yeniOkulNo= Integer.valueOf(okulNo);// run time Exception-> çalışma zamanı hatası
+                         //System.out.println("yeniOkulNo = " + yeniOkulNo);
+                 ​
+                         System.out.println("madem geldin dünyaya otur çalış javaya");
+                 ​
+                         // TASK-> byte short int maximum ve minimum değerlerini print eden code yazınız
+                 ​
+                         byte maxByteDegeri = Byte.MAX_VALUE;
+                         byte minByteDegeri = Byte.MIN_VALUE;
+                 ​
+                         System.out.println("maxByteDegeri = " + maxByteDegeri);
+                         System.out.println("minByteDegeri = " + minByteDegeri);
+                 ​
+                         System.out.println(Integer.MAX_VALUE);
+                         System.out.println(Integer.MIN_VALUE);
+                 ​
+                         int a=5;
+                         System.out.println(a);// 5
+                         System.out.println(5);// 5
+
+import java.util.Scanner;
+​
+public class C01_ScannerClass {
+​
+    public static void main(String[] args) {
+        // kullanıcıdan veri almak içinn şu adım takip edilir
+        //1. adım-> Scanner class'dan obj create edilir.
+​
+        //  Scanner scan = new Scanner(System.in);// Scanner classından scan isminde değerini System içinden alan bir obj.
+​
+        //  // 2 adım->Kullanıcıdan istenen veri için bildirimde bulunulur->sout("...");
+        //  System.out.print("adınızı giriniz :");
+​
+        //  // 3. adım-> kuulanıcının girdigi veri data type'ne göre bir variable atanır.
+        //  String isim=scan.nextLine();// kullanıcıdan gelen String tipinde isim verisi scan obj'ni nextLine() methodu ile atandı
+​
+        //  System.out.println("isim = " + isim);
+​
+        // Task -> Kullanıcının girdiği değere göre kare alanı ve cevresini hesaplayan bir code create ediniz...
+​
+        Scanner sc = new Scanner(System.in);//1. adım
+      //  System.out.print("karenin kenarı giriniz : ");// 2. adım
+      //  int kenar=sc.nextInt();//3. adım
+      //  System.out.println("alan : "+(kenar*kenar)+" çevre :"+(kenar*4));
+         /*
+         Kullanicinın  gunde içtiği  cay ve kullandığı  seker değerine göre
+         Bir yilda kac kg seker kullandigini hesaplayan bir code create ediniz...
+         1 seker = 1.7 gr
+         Ornek : Input : cay sayisi : 10 seker sayisi :2
+                 Output : Yilda 12.41 kg seker kullaniyorsunuz
+         */
+        System.out.println("günlük içtiğniz çay sayısını giriniz :");//çay için 2 adım
+        int caySayisi=sc.nextInt();//çay için 3 adım
+​
+​
+        System.out.println("şeker sayinizi giriniz : "); // şeker için 2. adım
+        int seker=sc.nextInt();// seker için 3 adım
+​
+        System.out.println("yıllık seker tüketiminiz : "+(caySayisi*seker*1.7*365)/1000+"kg");
+
+
+
+                 15,09,2022 DERS NOTU      VERİ TÜRÜ BÜYÜKLÜK SIRALAMASI
+ byte < short < int < long < float < double
+			Auto Widening Casting -> Kucuk data type'larini buyuk data typlearina Java  otomatik olarak yapar.
+​
+		 */
+​
+        boolean basarılı = true;
+        //String basarı=basarılı; -> dogal uyum olmayan variable'larda castşng yapılamaz CTE
+        // System.out.println("basarılı = " + basarılı);-> true
+        // System.out.println("basarı = " + basarı);->true
+        double d = 17;// double variable'a int 17 atandı k->b
+        System.out.println("d = " + d);//d = 17.0 auto widding
+        int sayi1 = 33;
+        int sayi2 = 7;
+​
+        System.out.println(sayi1 / sayi2);// 4
+        /*
+        java iki int sayiyi biribirine böldugunuzde sonucu int (tam sayı)verir
+         eğer bölme işleminde ondalık sonuç çıkarsa ondalık kısmı siler
+         */
+        byte b = 127;
+        int i = b;//k->b aw
+        System.out.println("i = " + i);//127
+​
+        int num = 1453;
+        double d1 = 17; //num;//k->b aw
+        System.out.println("d1 = " + d1);//1453.0
+        // double->b     int->k
+        double db = d1 / num;//TRICK->
+        ************
+        NOT,;  iki farklı data type sayi işleme girerse java
+        // kucuk olan data type turu için aw (otawaydır) yapar sonucu buyuk olan data type  olarak verir
+​
+        System.out.println("db = " + db);//db = 0.01169993117687543
+​
+
+
+        /*
+		 byte < short < int < long < float < double
+		 Explicit Narrowing Casting ->Buyuk data type'larini kucuk data type'larina cevirme islemini veri kaybndan dolayı
+		 Java otomatik olarak yapmaz. kod ile teyit ister...
+​
+		 */
+        double d2 = 14.53;
+        int num2 = (int) d2;//b->k
+        System.out.println("num2 = " + num2);//14
+        BÜYÜK SAYISI (DOUBLE) KÜÇÜK SAYIYA ÇEVİRİRKEN BİZDEN ONAY İSTER, ONAY VERDİĞİMİİZ İÇİN (int) yazdı.
+        SONUÇ OLARAK SAYIYI ÇEVİRİRKEN KÜÇÜLTÜ. YANİ SONUCU 14.53 DEĞİLDE 14 ALDI.0.53 KAYBIMIZ OLDU.
+
+        int num3 = 150;
+        byte b1 = (byte) num3;
+        System.out.println("b1 = " + b1);//b1 = -106
+​
+        double d3 = 333;  long l=d3 yazdığımızda hata verir. küçüğü büyüğe atayamazsın diye,
+        uyarı lambasında long long yazar yani d3 önce long et.(cast ed.) sonra longa ata. ve tıkladığımızda alttaki satır çıkar.
+
+        long l = (long) d3;
+​
+        double d4=571.4444;
+        long l2= (long) d4;
+        System.out.println("l2 = " + l2);//l2 = 571
+​
+​
+​
+    }

@@ -1,0 +1,389 @@
+System.out.println("   **** Increment-> Artırma *****    ");
+     ​
+             int a=7;
+     ​
+             System.out.println(++a);//8
+
+             System.out.println(a++);//8
+
+             System.out.println(a);//9
+
+             System.out.println(a++ + ++a);//20
+     ​
+
+// TASK ->
+     int k = 5;
+​
+        int sonuc = ++k + k++ + k++ + --k + k-- + k;
+		System.out.println("sonuc = " + sonuc);
+        System.out.println("k = " + k);
+
+
+
+        16.09.2022
+        Math.abs(a)
+             Girilen degerin mutlak degerini verir.
+        ​
+            Math.max(a, b)
+            Girilen iki degerden buyuk olani verir.
+Math.min(a, b)
+    Girilen iki degerden kucuk olani verir.
+​
+    Math.round(a)
+    Girilen degerin en yakin tamsayiya yuvarlar.
+​
+    Math.sqrt(a)
+    Girilen degerin karekokunu verir.
+​
+    Math.pow(a, b)
+    Girilen a ve b degerini a uzeri b olarak verir.
+​
+    Math.ceil(a) 3.1 => 4
+    Girilen bir ondalikli sayiyi bir sonraki en yakin tam sayiya yukseltir.
+​
+    Math.floor(a) 3.7 => 3
+    Girilen bir ondalikli sayiyi bir onceki en yakin tam sayiya indirger.
+
+    ÖRNEK
+System.out.println("81'in karekök değeri : " + Math.sqrt(81));//9.0
+System.out.println("sayinin mutlak degeri :"+Math.abs(-34));//34
+
+//    =         x = 8      x = 8
+//    +=       x += 3     x = x + 3
+//    -=       x -= 3     x = x - 3
+//    *=       x *= 3     x = x * 3
+//    /=       x /= 3     x = x / 3
+//    %=       x %= 3     x = x % 3
+
+ÖRNEK
+int yas=33;
+        System.out.println(yas+5);//38 atama =olmadığı için yas=33 normal toplama yaptık.
+
+        System.out.println("yas = " + yas);//33
+        System.out.println(yas += 11);//44-->atama yapıldığı için yas=44
+
+        ==     Esit               x == y
+        !=     Esit degil         x != y
+        >      buyuk              x > y
+        <      kucuk              x < y
+        >=     buyuk esit         x >= y
+        <=     kücük esit         x <= y
+        *******
+        int slmYs=33;
+        int krmYs=41;
+  System.out.println("krm b esit mi slm b -> "+(krmYs==slmYs));//false
+        System.out.println("krm b esit değil  mi slm b -> "+(krmYs!=slmYs));//true
+        System.out.println("krm b kucuk mu  slm b -> "+(krmYs<slmYs));//true
+        System.out.println("krm b buyuk mu   slm b -> "+(krmYs>slmYs));//true
+       *******
+
+
+       *****
+        s1 ve s2 String constant pool içerisinde aynı referans değere (reference) sahiptir. s3 ve s4 ise farklı nesneleri ifade eder.
+        s1 == s2 , s1 ve s2 'nin hafızadaki adres değerlerini karşılaştırır ve  String constant pool üzerinde aynı adresi gösterirler.
+        Böylece ekrana TRUE yazdırır.
+
+
+
+       String name="kerem bey";
+       String name1="kerem bey";
+        System.out.println(name1==name);// true
+        isimlerden birini "Kerem bey" deseydik false verirdi.ÇÜNKÜ K büyük harfle başlamış
+        ***
+        -------- && - and - (ve)---------
+
+         True   &&    True    -->  True
+         True   &&    False   -->  False
+         False  &&    True    -->  False
+         False  &&    False   -->  False
+
+
+        -------- ||- or - (veya)---------
+
+         True   ||    True    -->  True
+         True   ||    False   -->  True
+         False  ||    True    -->  True
+         False  ||    False   -->  False
+
+
+
+
+
+
+
+
+
+task 19;
+​
+String st="Apple";
+String st2="Apple";
+System.out.println(st==st2);
+​
+//task 20;
+​
+float num2=14;
+float num3=17;
+System.out.println(num2>=num3);
+​
+//task 21;
+​
+double g=14.23;
+double h=19.52;
+System.out.println(g!=h);
+​
+​
+//task22;
+​
+String n="Techno Study";
+String k="Techno Study";
+System.out.println(n!=k);
+​
+//task 23;
+​
+double x=14.23;
+double y=14.23;
+System.out.println(x<y);
+​
+//task24;
+​
+int z=120;
+int t=158;
+System.out.println(z>t);
+        // *** _30_Scanner8 ***
+         /*
+        Bir byte oluşturunuz.
+        Konsola kg cinsinden bir ağırlık yazınız.
+        Byte'ı yazdırınız.
+        */
+​
+        byte kilo;
+        System.out.print("Lutfen kg cinsinden kilonuzu giriniz: ");
+        kilo= scan.nextByte();
+​
+        System.out.println("Boyunuz: "+kilo);
+​
+​
+        // *** Task01 ***
+        /*
+        TASK-> Ask user to enter mid-term grade, final grade, and project grade Calculate the general grade
+		       (mid-term : 30% , project : 20%, final : 50%)
+​
+		Example: INPUT: mid-term grade (ara sınav notu) =78
+		      		    final grade (final grade) =66
+		      		    project grade (proje notu) =90
+		         OUTPUT: "Your grade is : 81,6"
+		 */
+​
+        System.out.print("Lutfen ara sinav notunuzu giriniz: ");
+        int araSinavNotu= scan.nextInt();
+        System.out.print("Lutfen final notunuzu giriniz: ");
+        int finalNotu= scan.nextInt();
+        System.out.print("Lutfen proje notunuzu giriniz: ");
+        int projeNotu= scan.nextInt();
+​
+        System.out.println("Genel notunuz: "+ (araSinavNotu*0.3+finalNotu*0.5+projeNotu*0.2));
+​
+​
+        // *** Task02 ***
+        /*
+         TASK -> Kullanicidan boyunu cm olarak, kilosunu kilogram olarak alin
+                 ve vucut kutle endeksini bulun.
+                 Sonucu tamsayi ve ondalikli sayi olarak yazdirin
+​
+            VKE= kilo/(boy*boy) …….. Kilo : kilogram , Boy : metre olmalidir
+​
+         Ornek : Input : boy :180 kilo : 80
+                 Output : Vucut kutle endeksiniz : 24
+                          Vucut kutle endeksiniz : 24.691…
+        */
+​
+        System.out.print("Lutfen boyunuzu cm olarak giriniz: ");
+        double boy1= scan.nextInt();
+        System.out.print("Lutfen kilonuzu kg olarak giriniz: ");
+        int kilo1= scan.nextInt();
+​
+        double vucutKutleEndeksi= kilo1/((boy1/100)*(boy1/100));
+        int intVke= (int) vucutKutleEndeksi;
+​
+        System.out.println("Ondalikli VKE: "+vucutKutleEndeksi);
+        System.out.println("Tamsayi VKE: "+intVke);
+​
+​
+        // *** Task03 ***
+        /*
+          TASK-> Kullaniciya gunde kac saat uyudugunu sorun,
+                 ayda yilda ve 40 yilda kac gununun uykuda gectigini yazdirin
+​
+          Ornek : Input : 8
+                  Output : Ayda 10, yilda 121, 40 yilda 4866 gununuz uykuda geciyor
+         */
+​
+        System.out.print("Gunde kac saat uyuyorsunuz: ");
+        double saat= scan.nextInt();
+​
+        double ayda= 30*saat/24;
+        double yilda= saat*365/24;
+​
+        System.out.println("Ayda: "+ayda+" gun, yilda: "+yilda+" gun, 40 yilda: "+yilda*40+" gun uykuda geciyor.");
+​
+​
+        // *** Task04 ***
+        /* TASK -> Clarusway spor salonu için kullanıcıdan isim soyisim, yaş, kilo, boy, salona devam edeceği ay süresini
+                  bilgilerini alıp aylık $20 olarak toplam ücretini hesplayıp print eden code create ediniz.
+        */
+        System.out.print("Lutfen adinizi ve soyadinizi giriniz: ");
+        String adSoyad= scan.nextLine();
+        System.out.print("Lutfen yasinizi giriniz: ");
+        int yass= scan.nextInt();
+        System.out.print("Lutfen kilonuzu kg olarak giriniz: ");
+        double kiloo= scan.nextInt();
+        System.out.print("Lutfen boyunuzu cm olarak giriniz: ");
+        int boyy= scan.nextInt();
+        System.out.print("Lutfen salonumuza devam edeceğiniz sureyi ay olarak giriniz: ");
+        int devamSuresi= scan.nextInt();
+​
+        System.out.println("Salonumuza kayit yaptiran musterinin:\nAdi soyadi: "+adSoyad+"\nYasi: "+
+                           yass+"\nKilosu: "+kiloo+" kg\nBoyu: "+boyy+" cm\nSalona devam edecegi sure: "+
+                           devamSuresi+ " ay\nOdeyecegi toplam ucret: "+devamSuresi*20+" $");
+​
+​
+        // *** Task05 ***
+        // kullanicidan 2 tam sayi alip bu 2 tamsayinin  dort islem sonucunu yazdiriniz.
+​
+        System.out.print("Lutfen tamsayi giriniz: ");
+        int sayi1= scan.nextInt();
+        System.out.print("Lutfen 2. tamsayiyi giriniz: ");
+        int sayi2= scan.nextInt();
+​
+        System.out.println("Toplama: "+(sayi1+sayi2));
+        System.out.println("Cikarma: "+(sayi1-sayi2));
+        System.out.println("Carpma: "+(sayi1*sayi2));
+        System.out.println("Bolme: "+(sayi1/sayi2));
+​
+​
+        // *** Task06 ***
+        /*
+        Problem Tanımı
+        Bir dik üçgenin iki dik kenarını alarak hipotenüsünü hesaplayan kod yazınız.
+​
+        Örnek Ekran Çıktısı
+
+        birinci kenar: 12
+        ikinci kenar: 5
+        hipotenus: 13
+        */
+        int kisaKenar= 5;
+        int uzunKenar= 12;
+        int hipotenuz= (5*5)+(12*12);
+​
+        System.out.println("Hipotenuz: "+Math.sqrt(hipotenuz));
+​
+​
+        // *** Task07 ***
+         /*
+        Problem Tanımı
+        Mesafeyi ve hızı alıp süreyi hesaplayan bir kod yazınız.
+        Örneğin:İstanbul ile Ankara arası 400km olarak ölçülmektedir. Bu yolu ortalama
+                120 km/saat hızla giden bir araç ne kadar sürede hedefe varır?
+​
+        Örnek Ekran Çıktısı
+        Mesafeyi giriniz: 400
+        Hızı giriniz: 100
+        Süre 4 saattir.
+       */
+        System.out.print("Mesafeyi giriniz: ");
+        int mesafe= scan.nextInt();
+        System.out.print("Hızı giriniz: ");
+        int hiz= scan.nextInt();
+​
+        System.out.println("Sure: "+mesafe/hiz+" saattir.");
+​
+​
+        // *** Task08 ***
+        /*
+          Kullanicidan alacaginiz vize1 vize2 ve final notlarini
+          vize ortalamasinin %30'u final notunun %70 alarak gecme notunu hesaplayiniz
+         */
+        System.out.print("Lutfen 1. vize notunuzu giriniz: ");
+        int birinciVize= scan.nextInt();
+        System.out.print("Lutfen 2. vize notunuzu giriniz: ");
+        int ikinciVize= scan.nextInt();
+        System.out.print("Lutfen final notunuzu giriniz: ");
+        int finalNotu1= scan.nextInt();
+​
+        int vizeOrt= (birinciVize+ikinciVize)/2;
+        System.out.println("Gecme notunuz: "+(vizeOrt*0.3+finalNotu1*0.7));
+​
+​
+        // *** Task09 ***
+        /*
+        Problem Tanımı
+        Kullanıcıdan a,b ve c sayılarını okuyarak aşağıdaki işlemi yapan kodu yazınız
+        a'nın karesinden b'nin karesini cikarip c nin 3 katina bolunuz
+​
+        Örnek Ekran Çıktısı
+        a sayısını giriniz: 5
+        b sayısını giriniz: 3
+        c sayısını giriniz: 1
+        sonuç : 5.333333333333333
+        */
+        System.out.print("a sayısını giriniz: ");
+        double a= scan.nextInt();
+        System.out.print("b sayısını giriniz: ");
+        double b= scan.nextInt();
+        System.out.print("c sayısını giriniz: ");
+        double c= scan.nextInt();
+​
+        System.out.println("Sonuc: "+ (((a*a)-(b*b))/3*c));
+​
+​
+        // *** TaDataTypssk10 ***
+        // Write a Java program to convert temperature from Fahrenheit to Celsius degree.
+        // Sıcaklığı Fahrenhayt'tan Santigrat derecesine çeviren bir Java programı yazınız.
+        // formula: c = (f-32)*5/9
+​
+        System.out.print("Lutfen Santigrat`a cevirmek istediginiz Fahrenhayt sicakligini giriniz: ");
+        int fahrDer = scan.nextInt();
+​
+        double celsius= (fahrDer-32)*5/9;
+​
+        System.out.println("Girdiginiz "+fahrDer+" Fahrenhayt "+celsius+" Santigrattir");
+​
+
+    }Scanner sc = new Scanner(System.in);
+             System.out.println("agam notunu  gir : ");
+             int not = sc.nextInt();
+             if (not<0 || not>100){
+                 System.out.println("agam negatif ve 100 den buyuk not olmaz\nadam gibi bişeyler gir :(\n" +
+                         "gelmiim oraya");
+             }else if (not<50){//50 den kucuk not alma kontrolu
+                 System.out.println("D");//1,2,3..49
+             }else if (not<60){//60 den kucuk not alma kontrolu
+                 System.out.println("C");
+             }else if (not<80){//80 den kucuk not alma kontrolu
+                 System.out.println("B");//60,61,...79
+             }else {//80 ve buyuk    not alma kontrolu
+                 System.out.println("A");//80,81...1000
+             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
