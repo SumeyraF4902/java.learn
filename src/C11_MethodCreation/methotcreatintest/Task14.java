@@ -1,6 +1,4 @@
-package C11_MethodCreation.methotcreatintest;
-
-import java.util.Scanner;
+package J11_MethodCreation.methotcreatintest;
 
 public class Task14 {
 

@@ -1,4 +1,4 @@
-package C11_MethodCreation;
+package J11_MethodCreation;
 
 public class C01_MethodCreation {
     public static void main(String[] args) {

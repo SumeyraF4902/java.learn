@@ -1,4 +1,4 @@
-package C11_MethodCreation;
+package J11_MethodCreation;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package C11_MethodCreation.methotcreatintest;
+package J11_MethodCreation.methotcreatintest;
 
 /*/public class/* cevaplar {_01_method task********
     Scanner scan = new Scanner(System.in);
