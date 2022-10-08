@@ -13,7 +13,7 @@ public class Q09_ortanca_karakter {
         Scanner sc=new Scanner(System.in);
         System.out.println("bir kelime giriniz");
         String str= sc.nextLine();
-        char ortancaKrk=str.charAt((str.length()-1)/2);//
+        char ortancaKrk=str.charAt((str.length()-1)/2);//-ortanca karakteri buluruz
         if(str.length()%2!=0 &&str.length()>=3){
             System.out.println("ortanca karakter:"+ortancaKrk);
 

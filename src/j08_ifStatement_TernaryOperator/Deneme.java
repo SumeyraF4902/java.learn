@@ -5,46 +5,28 @@ import java.util.Scanner;
 public class Deneme {
     public static void main(String[] args) {
 
-      Scanner scan=new Scanner(System.in);
-        System.out.println("Pazartesi 1\nSalı 2\nÇarşamba 3\nPerşembe 4\nCuma 5\nCumartesi 6 \nPazar  7\n Haftanın kaçıncı gününde olduğunuzu giriniz");
-        int gun=scan.nextInt();
-        int songun=(100%7)+gun;
-        switch (songun){
-            case 1:
-                System.out.println("Pazartesi ");
-                break;
-            case 2:
-                System.out.println("Salı ");
-                break;
-            case 3:
-                System.out.println("Çarşamba ");
-                break;
-            case 4:
-                System.out.println("Perşembe ");
-                break;
-            case 5:
-                System.out.println("Cuma ");
-                break;
-            case 6:
-                System.out.println("Cumartesi");
-                break;
-            case 7:
-                System.out.println("pazar");
-                break;
-            default:
-                System.out.println("lütfen tekrar deneyiniz");
+        Scanner scan = new Scanner(System.in);
+        //Interview Question
+
+        //// Girilen  100’den kucuk bir tamsayi için
+        // 1’den baslayarak girilen sayiya kadar tum sayilari print eden ama;
+        //  -girilen ifadenin polindrome olmasını kontrol eden method create ediniz...
+        //        plindrome:her iki yönde okundugunda eşit olan ifadeler Sayi 3’un kati ise sayi yerine “Java” yazdirin.
+        //       - Sayi 5’in kati ise sayi yerine “CAN'dır” yazdirin.
+        //      - Sayi hem 3’un hem 5’in kati ise sayi yerine “JavaCAN” print eden code create ediniz
 
 
-
-
-
+        System.out.println("bir ifade giriniz");
+        String str = scan.nextLine();
+        String tersstr = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            tersstr += str.charAt(i);
         }
-
-
-
-
-
-
+        System.out.println(tersstr);
+        if (str.equalsIgnoreCase(tersstr))
+        {
+            System.out.println("kelime polidrone bir kelime");
+        } else System.out.println("polindrome değil");
 
 
     }
