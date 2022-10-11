@@ -8,6 +8,7 @@ public class Odev08 {
         99-98-97-96....
         100 ve 0 dahil değildir.*/
 
+<<<<<<< HEAD
         for (int i=99;i>=1;i--){
             if(i%2==1){
                 System.out.print(i+" ");
@@ -21,3 +22,9 @@ public class Odev08 {
 
     }
 
+=======
+
+
+    }
+}
+>>>>>>> origin/master

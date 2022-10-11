@@ -1,13 +1,17 @@
 package j12_Lopps.TESTLER.Tasks;
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
+=======
+>>>>>>> origin/master
 public class Task02 {
     public static void main(String[] args) {
         /*
         task-> girilen iki tamsayı arasındaki tamsayıları print eden code create ediniz.
         for loop & while lopp
          */
+<<<<<<< HEAD
         Scanner sc = new Scanner(System.in);
         System.out.println("bir sayı giriniz");
         int sayı = sc.nextInt();
@@ -27,3 +31,10 @@ public class Task02 {
         }
     }
 }
+=======
+
+
+
+    }
+}
+>>>>>>> origin/master

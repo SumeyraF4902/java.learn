@@ -11,6 +11,7 @@ public class Task06_sayiBulmaca {
         // girilen her tahminde sayiyi buyut veya kucult diye kullaniciya yol gosterin
         // kullanici sayiyi buldugunda kac tahminde sayiyi buldugunu kullaniciya yazdirin
 
+<<<<<<< HEAD
         int randomSayi = (int) (Math.random() * 100);
         int say = 0;
         Scanner scan = new Scanner(System.in);
@@ -24,8 +25,15 @@ public class Task06_sayiBulmaca {
             } else System.out.println("küçült");
             sayi = scan.nextInt();
             say++;
+=======
+
+>>>>>>> origin/master
 
 
     }
 
+<<<<<<< HEAD
 }}
+=======
+}
+>>>>>>> origin/master

@@ -1,5 +1,6 @@
 package j12_Lopps.L03_DoWhileLoop;
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
 public class C02_DoWhileLoop {
@@ -20,4 +21,7 @@ public class C02_DoWhileLoop {
 
 
     }
+=======
+public class C02_DoWhileLoop {
+>>>>>>> origin/master
 }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Task10 {
     public static void main(String[] args) {
         // task ->  Girilen bir sayıya kadar  tek olanlarını print eden code create ediniz.
+<<<<<<< HEAD
 Scanner sc= new Scanner(System.in);
         System.out.println("bir sayı giriniz:");
         int sayı= sc.nextInt();
@@ -13,6 +14,9 @@ Scanner sc= new Scanner(System.in);
             System.out.print(a+ " ");
             a+=2;
         }
+=======
+
+>>>>>>> origin/master
 
 
     }

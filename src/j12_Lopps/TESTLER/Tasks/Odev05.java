@@ -1,7 +1,10 @@
 package j12_Lopps.TESTLER.Tasks;
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
+=======
+>>>>>>> origin/master
 public class Odev05 {
 
     /*
@@ -33,6 +36,7 @@ public class Odev05 {
      */
 
     public static void main(String[] args) {
+<<<<<<< HEAD
             Scanner sc= new Scanner(System.in);
         System.out.println(" üçün kuvveti bir sayı giriniz");
         int a= sc.nextInt();
@@ -50,5 +54,11 @@ public class Odev05 {
         }
 
         return false;
+=======
+
+
+
+
+>>>>>>> origin/master
     }
 }

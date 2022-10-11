@@ -13,6 +13,7 @@ public class Task03 {
 		 13x1=13 13x2=26  . . .. .  . 13x10=130
 		 */
 				
+<<<<<<< HEAD
 Scanner sc = new Scanner(System.in);
 		System.out.println("bir sayı giriniz");
 		int a= sc.nextInt();
@@ -28,3 +29,9 @@ Scanner sc = new Scanner(System.in);
 	}
 
 
+=======
+
+	}
+
+}
+>>>>>>> origin/master
