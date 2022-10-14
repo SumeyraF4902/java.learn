@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class T01_TopZıplamaMesafeSaysı {
 
    /* HAFTANIN TASK'iiii :-)
@@ -9,7 +11,26 @@ public class T01_TopZıplamaMesafeSaysı {
     */
 
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("kaç metre yükseklikten atıyoruz?:");
+        double yukseklik=sc.nextDouble();
+        double toplamYol=0;
+        int yereVsayısı=0;
+        do{
+            yereVsayısı++;
+            toplamYol+=yukseklik;
+            yukseklik*=(0.75);
+            toplamYol+=yukseklik;
+
+        }
+        while(yukseklik>1);
+            System.out.println(" topun aldığı toplam yol:"+toplamYol);
+        System.out.println("topun yere vurma sayısı:"+ yereVsayısı);
+
+
+        }
+
 
 
     }
-}
+

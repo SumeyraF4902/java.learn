@@ -11,7 +11,6 @@ public class C01_DoWhileLoop {
         en az bir kez çalışır..
 
          */
-<<<<<<< HEAD
         int yas=31;
         while (yas<33){
             System.out.println("agam yas"+yas+"gayet başarılı:) while body action");
@@ -21,7 +20,7 @@ public class C01_DoWhileLoop {
             System.out.println("agam yas"+yas+"gayet başarılı:) do  while body action");
             yas++;
         }while (yas<33);
-=======
->>>>>>> origin/master
+
+
     }
 }

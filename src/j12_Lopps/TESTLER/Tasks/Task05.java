@@ -10,7 +10,6 @@ public class Task05 {
 		 ayni satirda aralarina bosluk birakarak print rden code create ediniz
 
 		 */
-<<<<<<< HEAD
 		Scanner sc= new  Scanner(System.in);
 
 		System.out.println("isim ve soyisimnizi giriniz");
@@ -22,10 +21,7 @@ public class Task05 {
 			}
 
 
-=======
-		
-			
->>>>>>> origin/master
+
 
 	}
 

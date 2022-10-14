@@ -19,7 +19,7 @@ public class Odev09 {
 
         System.out.print("Bir tamsayı giriniz: ");
         int sayi = scanner.nextInt();
-<<<<<<< HEAD
+
         int sonuc=0;
         for (int i=2; i<=sayi;i++){
             sonuc+=i*i;
@@ -28,8 +28,6 @@ public class Odev09 {
         System.out.print("toplam "+ sonuc);
 
 
-
-=======
         int toplam = 0;
 
         for (int i = 1; i < sayi; i++) {
@@ -38,7 +36,7 @@ public class Odev09 {
 
         }
         System.out.println("Sayıların kareleri toplamı: " + toplam);
->>>>>>> origin/master
+
 
     }
 }

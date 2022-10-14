@@ -11,19 +11,17 @@ public class Odev04 {
          */
 
         //Kodu aşağıya yazınız.
-<<<<<<< HEAD
+
 for (int i=1;i<=100;i++){
     if (i%4==0&& i%5==0){
         System.out.print(i+" ");
     }
-}
-=======
 
->>>>>>> origin/master
+
 
 
 
 
 
     }
-}
+}}

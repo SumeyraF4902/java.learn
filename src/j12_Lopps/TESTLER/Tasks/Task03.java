@@ -12,26 +12,16 @@ public class Task03 {
 		 Ornek input = 13
 		 13x1=13 13x2=26  . . .. .  . 13x10=130
 		 */
-				
-<<<<<<< HEAD
-Scanner sc = new Scanner(System.in);
+
+
+		Scanner sc = new Scanner(System.in);
 		System.out.println("bir sayı giriniz");
-		int a= sc.nextInt();
-		for (int i=1; i<= a; i++){
+		int a = sc.nextInt();
+		for (int i = 1; i <= a; i++) {
 
-				System.out.println(a+"*"+i+"="+(a*i));
-			}
+			System.out.println(a + "*" + i + "=" + (a * i));
 		}
-
-
-
-
 	}
 
-
-=======
-
-	}
 
 }
->>>>>>> origin/master
