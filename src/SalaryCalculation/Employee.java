@@ -38,7 +38,10 @@ public class Employee {
                 ", salary=" + salary +
                 ", workHours=" + workHours +
                 ", year=" + year +
+<<<<<<< HEAD
                 ",company=Clarusway"+
+=======
+>>>>>>> origin/master
                 '}';
     }
 
@@ -50,9 +53,14 @@ public class Employee {
             raising=(salary+tax())*0.05;
         }else if(sumOfYear<15){
             raising=(salary+tax())*0.10;
+<<<<<<< HEAD
         }else {
             raising = (salary + tax()) * 0.20;
         } return raising;
+=======
+        }else raising=(salary+tax())*0.20;
+        return raising;
+>>>>>>> origin/master
 
 
     }
