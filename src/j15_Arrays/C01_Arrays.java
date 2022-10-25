@@ -79,7 +79,7 @@ Array'de primitive datalar veya non-primitive datalarin referanslari store edile
         // sıralamada büyük harfleri önce alır sonra küçük harflerde alfabetik sıralama yapar
 
 
-        System.out.println(Arrays.toString(isimArr));//sıarlama öncesi-> [muharrem, enise, cebrail, nazım, QA Özge hanım]
+        System.out.println(Arrays.toString(isimArr));//sıralama öncesi-> [muharrem, enise, cebrail, nazım, QA Özge hanım]
         Arrays.sort(isimArr);//isimArr elemanları naturel sıralama yapıldı
         System.out.println(Arrays.toString(isimArr));//sıralama sonrası -> [QA Özge hanım, cebrail, enise, muharrem, nazım]
         Arrays.sort(sayıArr);// küçükten büyüğe sıralandı

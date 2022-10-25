@@ -12,10 +12,13 @@ public class _13_Advance_zeroFront {
    Böylece {1, 0, 0, 1} {0, 0, 1, 1} olur. Verilen diziyi değiştirebilir ve döndürebilir veya yeni bir dizi oluşturabilirsiniz.
 
    Bu şekilde bir Array oluşturunuz: 1,0,0,1,0
-   Sonuç böyle olmalı :  0,0,0,1,1
+   Sonuç böyle olmalı :  0,0,0,1,1   BİTTTİİİİİİ
 
        */
-
+        int sayi[]={1,0,0,1,0};
+        Arrays.sort(sayi);
+        System.out.println(Arrays.toString(sayi));
+        System.out.println(Arrays.toString(sayi).replace("[","").replace("]",""));
 
     }
 }

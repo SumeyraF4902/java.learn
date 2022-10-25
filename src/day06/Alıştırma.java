@@ -1,31 +1,24 @@
 package day06;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Alıştırma {
+   static ArrayList<String>gunler= new ArrayList<>(Arrays.asList("pazartesi"," salı","çarşamba","perşembe","cuma","cumartesi","pazar"));
+   static ArrayList<Double>gunlukKazanclar=new ArrayList<>();
+   static Scanner sc= new Scanner(System.in);
     public static void main(String[] args) {
-       Scanner sc=new Scanner(System.in);
-        System.out.println("kaç eleman girmek istiyorsunuz");
-        int arr[]= new int[sc.nextInt()];
+        int gün=0;
+        while(gün<7){
+        System.out.println("agam "+ gunler.get(gün)+" günün hasılatını gir");
+        gunlukKazanclar.add(sc.nextDouble());
+        gün++;
 
-int toplam=0;
-        for( int i=0; i<arr.length;i++){
-            System.out.print(i+". sayıyı giriniz:  ");
-            arr[i]=sc.nextInt();
-            toplam+=arr[i];
 
-        }
-        int arrOrtalama=toplam/arr.length;
-        int ortalamayıGecensayı=0;
-        System.out.println(Arrays.toString(arr));
-        System.out.println(toplam);
-       for (int i=0;i<arr.length; i++){
-           if (arr[i]>arrOrtalama){
-               ortalamayıGecensayı++;
-           }
-       }
-        System.out.println("ortalamayı geçen sayı: "+ ortalamayıGecensayı);
 
-    }
-}
+
+
+
+}}}

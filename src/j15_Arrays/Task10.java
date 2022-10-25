@@ -28,6 +28,8 @@ public class Task10 {
 
 
         return arr;
+
+
     }
 
 }
