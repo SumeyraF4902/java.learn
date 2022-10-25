@@ -21,5 +21,11 @@ public class Task02 {
             arrToplam+=arr[i];
         }
         System.out.println("array eleman toplamları:"+arrToplam);
+        // 2 yol
+        for (int a:arr){
+            arrToplam+=a;
+        }
+
+        System.out.println(" for each ile " +arrToplam);
     }
 }

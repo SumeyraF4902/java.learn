@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
-public class _20_Arrayboth_Ends {
+public class
+_20_Arrayboth_Ends {
 
     public static void main(String[] args) {
 
@@ -10,8 +11,11 @@ public class _20_Arrayboth_Ends {
 
     Oluşturacağınız int array'i =   ([1, 2, 3, 4])
 
-    Sonuç bu şekilde olmalıdır. [1, 4]
+    Sonuç bu şekilde olmalıdır. [1, 4]  BİİTTTİİİİİ
       */
+        int arr[]={1, 2, 3, 4};
+        int arr2[]={arr[0],arr[arr.length-1]};
+        System.out.println(Arrays.toString(arr2));
 
     }
 }
