@@ -6,14 +6,14 @@ public class Employee {
     int workHours;
     int year;
 
-    public Employee(String name, int salary, int workHours, int yıl) {
+    public Employee(String name, int salary, int workHours, int year) {
         this.name = name;
         this.salary = salary;
         this.workHours = workHours;
-        this.year = yıl;
+        this.year = year;
     }
     public double tax(){// vergi methodu
-        double paymentOfTax=0;
+        double paymentOfTax;
         if(salary<10000){
             paymentOfTax=0;
         }else {
@@ -38,29 +38,24 @@ public class Employee {
                 ", salary=" + salary +
                 ", workHours=" + workHours +
                 ", year=" + year +
-<<<<<<< HEAD
                 ",company=Clarusway"+
-=======
->>>>>>> origin/master
                 '}';
     }
 
     public double raiseSalary(){//maaş artış oranı
         int timeOfYear=2021;
         int sumOfYear=timeOfYear-year;
-        double raising=0;
+        double raising;
         if (sumOfYear<5){
             raising=(salary+tax())*0.05;
         }else if(sumOfYear<15){
             raising=(salary+tax())*0.10;
-<<<<<<< HEAD
+
         }else {
             raising = (salary + tax()) * 0.20;
         } return raising;
-=======
-        }else raising=(salary+tax())*0.20;
-        return raising;
->>>>>>> origin/master
+
+
 
 
     }
