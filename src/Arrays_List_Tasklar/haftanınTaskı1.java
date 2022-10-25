@@ -1,5 +1,7 @@
 package Arrays_List_Tasklar;
 
+import java.util.ArrayList;
+
 public class haftanınTaskı1 {
     public static void main(String[] args) {
         /*
@@ -12,6 +14,15 @@ public class haftanınTaskı1 {
     Çalışanlar, İşverenler, Şirketler olmak üzere 3 ArrayListesi oluşturun
     Bu 3 ArrayList'i 2D ArrayList'te saklayın
      */
+        ArrayList<ArrayList<String>> list=new ArrayList<>();
+        ArrayList<String> calisanlar=new ArrayList<>();
+        ArrayList<String> isverenler=new ArrayList<>();
+        ArrayList<String> sirketler=new ArrayList<>();
+        list.add(sirketler);
+        list.add(calisanlar);
+        list.add(isverenler);
+
+
 
     }
 }
