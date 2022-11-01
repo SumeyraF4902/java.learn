@@ -8,7 +8,7 @@ public class Q01_WhileDoWhile {
         Scanner scan=new Scanner(System.in);
         System.out.println("bir sayı giriniz:");
         int sayı=scan.nextInt();
-      //  System.out.println(basamakToplamı(sayı));
+       System.out.println(basamakToplamı(sayı));
 // do While ile
         do {
         int toplam1=0;
@@ -26,7 +26,7 @@ public class Q01_WhileDoWhile {
 
         }
 
-  /* private static int basamakToplamı(int sayı) {
+   private static int basamakToplamı(int sayı) {
         int toplam=0;
         while(sayı!=0){
           toplam+=sayı%10;
@@ -34,7 +34,7 @@ public class Q01_WhileDoWhile {
         }
         return toplam;
 
-    }*/
+    }
 
 
     //for ile

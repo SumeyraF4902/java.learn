@@ -1,6 +1,7 @@
 package Arrays_List_Tasklar;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class haftanınTaskı1 {
     public static void main(String[] args) {
@@ -15,13 +16,13 @@ public class haftanınTaskı1 {
     Bu 3 ArrayList'i 2D ArrayList'te saklayın
      */
         ArrayList<ArrayList<String>> list=new ArrayList<>();
-        ArrayList<String> calisanlar=new ArrayList<>();
-        ArrayList<String> isverenler=new ArrayList<>();
-        ArrayList<String> sirketler=new ArrayList<>();
+        ArrayList<String> calisanlar=new ArrayList<>(List.of("Ahmet","mehmet" ,"ali","veli"));
+        ArrayList<String> isverenler=new ArrayList<>(List.of("Özen hmn"));
+        ArrayList<String> sirketler=new ArrayList<>(List.of("Ford","Audi","IBM"));
         list.add(sirketler);
         list.add(calisanlar);
         list.add(isverenler);
-
+        System.out.println(list);
 
 
     }

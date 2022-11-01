@@ -1,9 +1,9 @@
 package Arrays_List_Tasklar;
 
 public class lessonClass {
-    public static void main(String[] args) {
+
          /*
-    Task 03 ->
+    Task 03 ->ÜC CLASS AÇILDI LESSONCLASS, STUDENTCLASS,CLASSRUNNER
     Lesson Class :  fields : name, credit (1-10 arasında değer almalı)
     Student Class : fields : name, maxCredit, dersleri(Lesson class obj) saklayacak list
                    derslerin toplam kredi miktarını return eden  toplamKredisi method
@@ -11,5 +11,15 @@ public class lessonClass {
                        alamayacagı dersleri print eden code create ediniz
 
      */
+    //fields
+    String dersName;
+    int credit;
+
+    public lessonClass(String dersName, int credit) {
+        this.dersName = dersName;
+        this.credit = credit;
     }
 }
+
+
+
