@@ -14,7 +14,7 @@ public class Q10_StringManipulation {
         String soyisim=sc.nextLine().toLowerCase();
         if(name.length()>soyisim.length()) {
             System.out.println("isminiz daha uzun");
-        } else if(name.length()==soyisim.length()){ System.out.println( "isim ve so isim eşit");
+        } else if(name.length()==soyisim.length()){ System.out.println( "isim ve soy isim eşit");
         }else System.out.println("soyisminiz daha uzun");
 
 

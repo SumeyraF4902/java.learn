@@ -10,16 +10,7 @@ public class Q02_Println_vs_print {
         System.out.println("class");
         System.out.println("******Print*****");
         System.out.println("Welcome to Java Class");
-            /*
-   konsolda
-   1
-   2
-   3
-   4
-   5
-   yazdiriniz
-   sonrasinda da  yanyana 12345 yazdiriniz
-    */
+
             /*
    konsolda
    1

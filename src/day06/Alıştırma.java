@@ -6,19 +6,31 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Alıştırma {
-   static ArrayList<String>gunler= new ArrayList<>(Arrays.asList("pazartesi"," salı","çarşamba","perşembe","cuma","cumartesi","pazar"));
-   static ArrayList<Double>gunlukKazanclar=new ArrayList<>();
-   static Scanner sc= new Scanner(System.in);
     public static void main(String[] args) {
-        int gün=0;
-        while(gün<7){
-        System.out.println("agam "+ gunler.get(gün)+" günün hasılatını gir");
-        gunlukKazanclar.add(sc.nextDouble());
-        gün++;
+        /* Kullanicidan sayilar girmesini isteyin
+         * ve girdigi sayilari toplayip yazdirin.
+         * yeni sayi isteyin
+         * girilen sayilarin toplami 100 'u gecerse
+         * "... kere sayi girdin. Bu kadar sayi yeter" yazdirin ve oyunu bitirin
+         *
+         */
+        Scanner sc= new Scanner(System.in);
+        int toplam=0;
+        int count = 0;
+        while (toplam>=100){
+            System.out.println("sayı giriniz");
+
+
+
+
+    }}}
 
 
 
 
 
 
-}}}
+
+
+
+
