@@ -1,6 +1,4 @@
-package day09.day1;
-
-import java.util.Scanner;
+package day09.day1_ınterwiew_soruları;
 
 public class Q07_IsDigit {
       /*
