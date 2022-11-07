@@ -1,4 +1,4 @@
-package SalaryCalculation;
+package Drakke_Hoca.SalaryCalculation;
 
 public class Employee {
     String name;

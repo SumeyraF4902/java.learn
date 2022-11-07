@@ -8,7 +8,13 @@ public class Q06_Varargs02 {
         System.out.println("carp(3.5,4.9,5.9,2.3) = " + carp(3.5, 4.9,5.9,2.3));
 
 
+
+
     }
+
+
+
+
 
     private static double carp(double... sayi) {
         double carpim =1;

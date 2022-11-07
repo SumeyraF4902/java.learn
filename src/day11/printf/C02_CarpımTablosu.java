@@ -14,5 +14,16 @@ public class C02_CarpımTablosu {
      public static void main(String[] args) {
          //Call to multipleTable method inside main method
          // Create a method an integer as parameter
+          int tableInput=5;
+          multipleTable(tableInput);
+     }
+
+     private static void multipleTable(int tableInput) {
+          for (int i=1; i<=tableInput; i++) {
+               for (int j = 1; j <=tableInput; j++) {
+                    System.out.printf("%-3d",i*j);// sola yasla araları 3 karakter boşluk olur
+               }
+               System.out.println();
+          }
      }
 }

@@ -1,4 +1,4 @@
-package SalaryCalculation;
+package Drakke_Hoca.SalaryCalculation;
 
 public class Runner {
     public static void main(String[] args) {

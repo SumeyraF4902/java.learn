@@ -1,5 +1,8 @@
 package day06;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,23 +10,35 @@ import java.util.Scanner;
 
 public class Alıştırma {
     public static void main(String[] args) {
-        /* Kullanicidan sayilar girmesini isteyin
-         * ve girdigi sayilari toplayip yazdirin.
-         * yeni sayi isteyin
-         * girilen sayilarin toplami 100 'u gecerse
-         * "... kere sayi girdin. Bu kadar sayi yeter" yazdirin ve oyunu bitirin
-         *
-         */
-        Scanner sc= new Scanner(System.in);
-        int toplam=0;
-        int count = 0;
-        while (toplam>=100){
-            System.out.println("sayı giriniz");
+        StringBuilder strB=new StringBuilder("AVATAR");
+       /* strB.insert(0,"K");
+        System.out.println(strB);
+        StringBuilder sd=new StringBuilder(2+"apple"+3+8+"banana");
+        String isim="Elly";
+        sd.append(isim,1,3);
+        System.out.println(sd);
+        sd.delete(3,5);
+        System.out.println(sd);*/
+        strB.subSequence(1,5);//vata
+        System.out.println(strB);
+        strB.reverse();//atav
+        System.out.println(strB);
+        strB.deleteCharAt(2);//atv
+        System.out.println(strB);
+
+    }
 
 
 
 
-    }}}
+
+}
+
+
+
+
+
+
 
 
 

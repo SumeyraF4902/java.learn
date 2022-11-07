@@ -21,6 +21,23 @@ public class C03_MarketFisi {
     toplam     15.00kg      44,23€
      */
     public static void main(String[] args) {
-
+    String[] urun= {"Domates","Biber","Patlican","Uzum","Armut"};
+    double [] br_fiyat={2.3, 2.29, 4.1, 2.00, 3.00};
+    double [] miktar={1, 2, 3.5, 2.5, 6};
+        System.out.println("Ürün\t\t Miktar     br_fiyat        Ürün_Toplam");
+        System.out.println("====================================================");
+        for (int i=0; i<urun.length; i++) {
+            System.out.printf("%-10s  %5.2f kg  €%5.2f                €%4.2f\n ", urun[i],miktar[i], br_fiyat[i], miktar[i]*br_fiyat[i]);
+        }
+        System.out.println("=========================================================");
+        double toplamUrunMiktarı=0;
+        for (int i=0; i<miktar.length;i++) {
+            toplamUrunMiktarı+=miktar[i];
+        }
+        double toplamOdenecekPara=0;
+        for (int i=0; i<miktar.length;i++){
+            toplamOdenecekPara+=miktar[i]*br_fiyat[i];
+        }
+        System.out.printf("toplam        %5.2f  kg             %15.2f€",toplamUrunMiktarı,toplamOdenecekPara);
     }
 }
