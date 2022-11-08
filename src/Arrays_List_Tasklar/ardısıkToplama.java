@@ -17,14 +17,14 @@ public class ardısıkToplama {
     private static void ardısıkToplam(int arr[]) {
         ArrayList<Integer> toplam=new ArrayList<>();
         int  counter=0; int j; int sum=0;
-        for(int i=0; i<arr.length;i++){
+        for(int i=0; i<arr.length;){
              sum=0;
             for ( j=i;j<=i+counter  && j<arr.length;j++){
                 sum+=arr[j];
-                counter++;
+
 
             }toplam.add(sum);
-
+                counter++;
             i=j;
         }
         System.out.println(toplam);
