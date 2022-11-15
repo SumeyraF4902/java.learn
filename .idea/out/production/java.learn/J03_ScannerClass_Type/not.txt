@@ -161,7 +161,7 @@ public class C02_VariableCreate {
                   int age = 34;
                   int yil = 22;
                   boolean emekliMi = true;
-                  boolean ıtci = false;
+                  boolean ısci = false;
                   char ch = '$';
                   char hrf = 'A';
           ​

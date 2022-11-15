@@ -1,33 +1,32 @@
 package day08;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class deneme {
     public static void main(String[] args) {
-        // verilen string değerinin içerdiği karakter sayılarını yazdıran code create ediniz
-        String str="nfmllşkgfşşö şlşgkklv#½$+542165484 vöb";
-        //logic
-        //1 . aşama verilen bütün karakterleri gezeceğim için for loopa ihtiyacım var.
-        //2. karakter sayısını almak için bizlere değeri 0 olan bir int değer girmem lazım.
-        //3. str ifadesindeki er karakterden sadece 1 adet içeren bir String gerekiyor.(benzersizStr)
-        String benzersizStr="";
+       /*
+Count the frequency of the letters in a given String as the format below:
+Input: String str = "Java is so Good";
+Output: String strOutput = "J1 a2 v1 i1 s2 o3 G1 d1";
+ */
 
-      for(int i=0; i<str.length(); i++) {
-          if(!benzersizStr.contains(""+str.charAt(i))) {
+String str = "Java is so Good";
+String yeni="";
+for (int i=0;i<str.length();i++) {
+    int say=0;
+    for (int j=0; j<str.length();j++) {
+        if(str.charAt(j)==str.charAt(i)){
+            say++;
+        }
+    }
+    if(!yeni.contains(String.valueOf(str.charAt(i))) ){
 
-              benzersizStr+=""+str.charAt(i);
-          }
-
-      }
-        System.out.println(benzersizStr);
-      for(int i=0;i<benzersizStr.length();i++) {
-          int adet = 0;
-          for (int j = 0; j < str.length(); j++){
-              if (benzersizStr.charAt(i) == str.charAt(j)) {
-                  adet++;
-              }}
-          System.out.println(benzersizStr.charAt(i) + "= " + adet);
+        yeni+=""+str.charAt(i)+say+" ";}
+}
+        System.out.println(yeni);
+    }
 
 
     }
-}}
+

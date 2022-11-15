@@ -9,10 +9,10 @@ public class Q04_CountOfEnterCode {
             // giriş hakkı üç olacak
             //bir pin kodu belirle ve kullanıcının girdiğiyle karşılaştır.
             // 4 defada yanlış girdiğinde hakkı bitecek.
-            String pin="sumeyra12345";
+            String pin="smyr4019";
             int girisHakkı=4;
             Scanner sc = new Scanner(System.in);
-            System.out.println("**** HoşGeldiniz****");
+            System.out.println("**** Hoş geldiniz ****");
 
             while (true) {
                 System.out.println("pin kodunuzu giriniz");

@@ -8,7 +8,7 @@ public class Q06_Arrays {
     public static void main(String[] args) {
         /*
          * verilen arrayin n sayisi kadar maksimun  degerlerini bulan java programi yaziniz
-         * not kisa metodlar kullamayiniz
+         * not kisa metodlar kullanmayiniz
          * Input : {1,2,3,4,5,6,7,8} input n:2 Output : 7 and 8
          */
 

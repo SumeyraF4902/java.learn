@@ -29,6 +29,13 @@ public class C02_FileInputStreamException01 {
         FileInputStream fis =new FileInputStream("C:\\Users\\Musin\\IdeaProjects\\java.learn\\src\\j29_Exceptions\\ebikGabık");
     //ilgili dosyaya ulaşmak için fis obj tanımlandı parametre olarak ulaşılacak dosya yolu (path) girildi.
         // ilgili dosyanın üzerine git sağ tıkla copy Path Referanceyi tıkla kopyala iki tırnak arasına yapıştır.
+        //FileNotFoundException--> adres yanlışsa kontrolü
+
+        /*
+        Eğer bir methodda  Checkod (CTE riski olan excp.) exception varsa method signature (method name den sonraki bölüm) hata uyarısı altı kırmızı çizgi verir
+        komutun derlenmesine izin vermez ve kod üzerine geldiğinde Add...exception handle etme tavsiye eder otamatik throws excp eklenir.
+Bu şekilde methodu call eden komutlat try-catch alınması garanti edilmiş olur.
+        */
 
         int k;
         while ((k=fis.read())!=-1){// read o sayfadaki charları okuyor.IOException--> evde yoksa kontrolü yapıyor

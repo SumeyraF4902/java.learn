@@ -28,12 +28,12 @@ public class Q11_Arrays {
         ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3, 5, 6, 7, 8, 10, 9));
         ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(7, 2, 3, 10, 5, 9, 1, 4, 8));
         ArrayList<Integer> list3 = new ArrayList<>(Arrays.asList(7, 5, 1, 2, 4, 6, 8, 3, 9));
-​
+
         System.out.println(eksiksayi(list1));
         System.out.println(eksiksayi(list2));
         System.out.println(eksiksayi(list3));
-​
-​
+
+
     }
 ​
     private static ArrayList<Integer> eksiksayi(ArrayList<Integer> list1) {
