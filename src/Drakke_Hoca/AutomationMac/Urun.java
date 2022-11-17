@@ -12,6 +12,9 @@ public class Urun {
 •	7filtreKahve=1.99;
 •	8productNum;
 •	9price;*/
+    //private  access modifier ile -->ENCapsulation
+    //fetch --read --> get ile
+    //update --> set ile
     private double kraker=2.5;
     private double cips=2.2;
     private double cocaCola=2.2;
@@ -19,8 +22,8 @@ public class Urun {
     private double su=1.0;
     private double cay=1.5;
     private double filtreKahve=1.99;
-    private int productNum;
-    private double price;
+    private int productNum;//satışı yapılan herbir ürüne numara verdiğimizi düşünüyoruz
+    private double price;//fiyatı
 
     public double getKraker() {
         return kraker;

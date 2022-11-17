@@ -1,0 +1,14 @@
+
+
+
+
+                Kare, Dikdortken, ve cember sınıflarından oluşacak bir geometri programı yapılmak isteniyor.
+            bunların ayrı ayrı , fakat ortak metodlarının (cevresi() ve alani() )zorunlu olabilmesi için
+            gerekli yapıyı kurunuz ve print ediniz....
+
+            çözümü:
+            zorunlu dediğiği için implement yaparız
+            alanı ve çevreyi absract yaoarız ki implement yapsın
+            çember alanı pi'yi final yaparız ki kimse değiştiremesin.
+           absract( parents-child)--> kalıtımdır babadan dededen kalma genetik yapı gibi
+            imlement dayı amca hala gibi düşün onları örnek alıp haraketlerini değiştirdiğini düşün
