@@ -1,9 +1,7 @@
 package j34_Iterators;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
+import java.util.concurrent.Callable;
 
 public class C02_Previous {
     public static void main(String[] args) {
@@ -40,6 +38,7 @@ public class C02_Previous {
             }
         }
             System.out.println(l2);//[cağla, uğur, muharrem, cebrail:-)]
+
         /*
         ÇOK ÖNEMLİ:--> hasPrevious() meth için MUTLAKA KESİNLİKLE hasNext() ve next() meth çalıştırılarak
          cursor (pointer) en sona getirilmeli.

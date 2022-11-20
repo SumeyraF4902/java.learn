@@ -35,7 +35,7 @@ public class C01_Iterators {
         System.out.print("l1 :-( update  sonrası"+ l1);//[Nur:-), Gamze:-), Erol:-), Bekir:-)]
         /*
         index desteklemeyen yapılarda tekrarlayan aksiyon için for each loop update yapamayabilir yukarideki task de olduğu gibi
-        Bu Ddurumda java ıtrerator interface den tanımlanacak variable ile tekrarlayan aksiyonlar index olmadan yapılır.
+        Bu durumda java ıtrerator interface den tanımlanacak variable ile tekrarlayan aksiyonlar index olmadan yapılır.
          */
 
         System.out.println();
