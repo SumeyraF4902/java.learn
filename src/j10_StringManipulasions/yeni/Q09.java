@@ -15,7 +15,9 @@ public class Q09 {
 	    */
 Scanner scan=new Scanner(System.in);
         System.out.println("bir kelime giriniz:");
-        String kelime=scan.nextLine();
-
+        String line=scan.nextLine();
+        if(line.length()%2==0) {
+            System.out.println(line.substring(0, line.length() / 2));
+        }else System.out.println("kelimeniz çift sayı olmadığı için ortası yok");
     }
 }

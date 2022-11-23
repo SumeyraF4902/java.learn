@@ -25,10 +25,10 @@ public class C08_Equals_equalssignoreCase {
         String s2="songul hanım";
         String s3=new String("songul hanım");// objedir nan primitivedir   heap memory de saklanır
         String s4=new String("songul hanım");// objedir nan primitivedir. heap memory de saklanır
-        System.out.println(s1==s2);
-        System.out.println(s1.equals(s2));
-        System.out.println(s3==s4);
-        System.out.println(s3.equals(s4));
+        System.out.println(s1==s2);//true
+        System.out.println(s1.equals(s2));//true
+        System.out.println(s3==s4);//false
+        System.out.println(s3.equals(s4));//true
 
 
 

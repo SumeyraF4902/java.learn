@@ -22,7 +22,11 @@ public class Task04 {
              }
             }
         }else System.out.println("hatalı giriş yaptınız");
-
+/*
+for (int i=Math.min(a,b); i<Math.max(a,b);i++){ bu şekilde yaparsak otomatik olarak kendisi küçük ve büyük sayıyı bulacak
+        if (i%2==0){
+            System.out.println(i+" ");
+ */
 
     }
 }

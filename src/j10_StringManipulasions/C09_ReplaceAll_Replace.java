@@ -25,23 +25,23 @@ public class C09_ReplaceAll_Replace {
         // \\d BOŞLUK ( RAKAMLAR 0-9
         // \\D BOŞLUK (RAKAMLAR Dizisindeki tüm karakterler
         str="      JavaCAN'lara selam olsun :) java ile 123455544 offer ***  ";
-        System.out.println(str.replaceAll("\\s", "+"));
-        System.out.println(str.replaceAll("\\S", "+"));
-        System.out.println(str.replaceAll("\\w", "+"));
-        System.out.println(str.replaceAll("\\W", "+"));
-        System.out.println(str.replaceAll("\\d", "+"));
-        System.out.println(str.replaceAll("\\D", "+"));
+        System.out.println(str.replaceAll("\\s", "+"));// tüm boşluklara + koyar.//++++++JavaCAN'lara+selam+olsun+:)+java+ile+123455544+offer+***++
+        System.out.println(str.replaceAll("\\S", "+"));// boşluk hariç tüm karakterleri + yapar.++++++++++++ +++++ +++++ ++ ++++ +++ +++++++++ +++++ +++
+        System.out.println(str.replaceAll("\\w", "+"));//+++++++'++++ +++++ +++++ :) ++++ +++ +++++++++ +++++ ***
+        System.out.println(str.replaceAll("\\W", "+"));//++++++JavaCAN+lara+selam+olsun++++java+ile+123455544+offer++++++
+        System.out.println(str.replaceAll("\\d", "+"));//JavaCAN'lara selam olsun :) java ile +++++++++ offer ***
+        System.out.println(str.replaceAll("\\D", "+"));//+++++++++++++++++++++++++++++++++++++++++++123455544++++++++++++
         /*TASK girilen ismini soyismini ve 16 haneli kredi kartı no bilgilerini aşağıdaki formatta print eden code create  ediniz.
         //isi-soyisim:M******  B*****
         // kart no:*************1234
              */
-    String ad="sümeyra";
-    String soyad="öztürk";
+    String ad="sumeyra";
+    String soyad="özturk";
     String kartno="1234567891236547";
        String yeniIsım=ad.charAt(0)+ad.substring(1).replaceAll("\\w", "*");
        String  yenisoyad=soyad.charAt(0)+soyad.substring(1).replaceAll("\\w","*");
 
         String yenikartno="**** **** **** ****"+kartno.substring(12);
-        System.out.println("isim -soyisim:"+yeniIsım+yenisoyad+"kart no: "+yenikartno);
+        System.out.println("isim -soyisim:"+yeniIsım+yenisoyad+"kart no: "+yenikartno);//isim -soyisim:s******ö*****kart no: **** **** **** ****6547
     }
 }

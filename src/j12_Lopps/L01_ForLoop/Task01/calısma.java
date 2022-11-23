@@ -4,15 +4,10 @@ import java.util.Scanner;
 
 public class calısma {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int toplam=0;
-        for(int i=1; i<=5;i++){
-            System.out.println(i+". sayıyı giriniz");
-            int sayi= sc.nextInt();
-            if (sayi<=10|| sayi>=20){
-                toplam+=sayi;
-            }
-        }
-        System.out.println("girdiğini sayıların istenen şarta toplamı:"+toplam);
+        //Task--girilen tamsayısını tam bölen sayısını print eden code create ediniz
+        //20-->1,2,4,5,10,20,; 6 tane tam böleni vardır
+        //Task--girilen tam sayının rakamları toplamını print eden METHOD create ediniz
+
+
 
     }}
