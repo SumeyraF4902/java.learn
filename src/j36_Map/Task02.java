@@ -37,13 +37,21 @@ public class Task02 {
         System.out.println("muhsinKartvizit.get(\"isim\") = " + muhsinKartvizit.get("isim"));
         System.out.println("muhsinKartvizit.get(\"Telefon\") = " + muhsinKartvizit.get("Telefon"));
         System.out.println("muhsinKartvizit.get(\"Adres\") = " + muhsinKartvizit.get("Adres"));
+
         Map<String, Map<String,String>> kartvizitler=new HashMap<>();
+
         kartvizitler.put("sümeyra",sumeyraKartvizit);
         kartvizitler.put("muhsin",muhsinKartvizit);
         System.out.println("Sümeyra'nin bilgileri:"+kartvizitler.get("sümeyra"));
         System.out.println("Muhsin'in bilgileri:"+kartvizitler.get("muhsin"));
         System.out.println("kartvizitler = " + kartvizitler);
-
-
+        System.out.println("kartvizitler.get(\"sümeyra\").get(\"telefon\") = " + kartvizitler.get("sümeyra").get("telefon"));
+// sorudışı çalışmalar
+        Map<Integer,Kartvizit> krt=new HashMap<>();// Karvizit clasından değerler aldık.
+        Kartvizit k1=new Kartvizit("enise","enise@tester.com","google","54236");
+         krt.put(k1.id, k1);
+        System.out.println("krt = " + krt);
+        System.out.println("krt.get(k1.id) = " + krt.get(k1.id));// k1.id key values
+        System.out.println("krt.get(101) = " + krt.get(101));//101 key values
     }
 }

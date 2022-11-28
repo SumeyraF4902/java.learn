@@ -6,7 +6,8 @@ public class Urunler {
     private int miktar;
     private String birim;
     private int raf;
-
+    static int idver = 1000;
+    private int id;
     public Urunler() {
     }
 
@@ -16,6 +17,22 @@ public class Urunler {
         this.miktar = miktar;
         this.birim = birim;
         this.raf = raf;
+        this.id = idver++;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Urunler(String urunIsmi, String uretici, String birim) {
+        this.urunIsmi = urunIsmi;
+        this.uretici = uretici;
+        this.birim = birim;
+        this.id = idver++;
     }
 
     public String getUrunIsmi() {
@@ -58,14 +75,8 @@ public class Urunler {
         this.raf = raf;
     }
 
-    @Override
-    public String toString() {
-        return
-                "urunIsmi='" + urunIsmi + '\'' +
-                ", uretici='" + uretici + '\'' +
-                ", miktar=" + miktar +
-                ", birim='" + birim + '\'' +
-                ", raf='" + raf + '\''
-                ;
-    }
+
+
+
+
 }

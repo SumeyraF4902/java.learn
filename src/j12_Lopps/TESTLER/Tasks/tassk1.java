@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class tassk1 {
     public static void main(String[] args) {
         /*
-Task-> girilen sayıların toplamı 333 gectiğinde girilen sayı adedini ve toplamını prşnt eden code create ediniz.
+Task-> girilen sayıların toplamı 333 gectiğinde girilen sayı adedini ve toplamını print eden code create ediniz.
  */
         Scanner sc=new Scanner(System.in);
         System.out.println("sayı giriniz:");
@@ -17,6 +17,6 @@ Task-> girilen sayıların toplamı 333 gectiğinde girilen sayı adedini ve top
             toplam+=sayı;
             adet++;
         }
-        System.out.println(adet+"sayının toplamı:"+toplam);
+
     }
 }

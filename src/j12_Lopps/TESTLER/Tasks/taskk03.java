@@ -15,5 +15,5 @@ public class taskk03 {
             }
             sayi--;
         }
-    }
-}
+
+}}

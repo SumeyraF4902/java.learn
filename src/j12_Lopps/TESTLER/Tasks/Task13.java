@@ -12,10 +12,11 @@ public class Task13 {
         System.out.println("bir karakter giriniz:");
         char a = sc.next().charAt(0);
 
-        while (a == 'x') {
-
-            System.out.println("JAVATAR");
+        while (a != 'x') {
             a++;
+            System.out.println("JAVATAR");
+            a = sc.next().charAt(0);
+
         }
         System.out.println("javacan");
 

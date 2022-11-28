@@ -27,5 +27,16 @@ public class Task02 {
         }
 
         System.out.println(" for each ile " +arrToplam);
-    }
+    }/*
+      Scanner sc=new Scanner(System.in);
+        System.out.println("Kaç elemanlı arr istiyorsun");
+        int boyut=sc.nextInt();
+        int arr[]=new int[boyut];
+        int toplam=0;
+        for (int i=0;i<boyut;i++) {
+            System.out.println(i+1+ "  sayıyı giriniz");
+            arr[i]=sc.nextInt();
+            toplam+=arr[i];
+        }
+        System.out.println(toplam);*/
 }

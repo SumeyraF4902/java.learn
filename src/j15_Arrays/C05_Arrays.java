@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class C05_Arrays {
     public static void main(String[] args) {
         //Array copy... copyOf(arr,newLength)--> girilen Arr yin newLength kadar ilk elmanını kopyalar.
-        //Array copy... copyOf(arr,newLength);-> girilen arr'yin newLength kadar ilk elemanını copyalar
-
+        //Array copy... copyOfRange(arr,newLength);-> girilen arr'lerin arasındaki arrayleri copyalar
+        // Array'ı belirli bir eleman ile update(set-dğiştirme) etme... fill(arr,value);
         int sayi[] = {63, 21, 47, 27, 35, 12, 36, 31, 46, 24};
 
         int yeniArr[] = Arrays.copyOf(sayi, 5);//[63, 21, 47, 27, 35]

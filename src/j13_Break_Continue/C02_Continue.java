@@ -18,6 +18,12 @@ for (int i=0;i<email.length(); i++){
     char c=email.charAt(i);
     if (c==' ')continue;
     System.out.print(c);
-}
+}/*
+for (int i=0;i<email.length();i++) {
+           char  c=email.charAt(i);
+            if(c==' '|| c==','|| c=='.'){
+                continue;
+            }System.out.print(c);
+        }*/
     }
 }

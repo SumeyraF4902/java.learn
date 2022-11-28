@@ -9,5 +9,9 @@ public class calısma {
         //Task--girilen tam sayının rakamları toplamını print eden METHOD create ediniz
 
 
-
+for (int i=1; i<=20;i++) {
+    if(20%i==0){
+        System.out.println("asal değil");
+}
+    }
     }}
