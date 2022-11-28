@@ -57,6 +57,6 @@ public class C06_distinct {
     }
     //Task : listin elemanlarin karakterlerinin cift olanlarının   karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
     public static void ciftKareBkSırala(List<String>menu){
-        menu.stream().filter(t->t.length()%2==0).sorted().distinct().map(String::length).map(t->t*t).forEach(t -> System.out.print(t+" "));
+        menu.stream().map(t->t.length()*t.length()).filter(C01_LambdaExpression::ciftMi).sorted().distinct().forEach(t -> System.out.print(t+" "));
     }
 }
