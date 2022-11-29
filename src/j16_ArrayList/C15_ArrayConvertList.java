@@ -6,7 +6,7 @@ import java.util.List;
 
 public class C15_ArrayConvertList {
     public static void main(String[] args) {
-        // King of TRICK -> Array'dan çevirilen List aray kaynaklı oduğu için array davraınışı
+        // King of TRICK -> Array'dan çevirilen List aray kaynaklı oduğu için array davranışı
         // gösterir boyut sabittir dolayısıyle remove add method çalışmaz.
         String arrJavaCan[]={"Akif","Gamze","Musty","SevdeNur"};
         List<String > listJavaTar= Arrays.asList(arrJavaCan);//arrJavaCan değerleri list elelman olarak atandı

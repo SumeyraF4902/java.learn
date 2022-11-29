@@ -37,6 +37,12 @@ fields --> Universite (String)
         System.out.println("\n   *****");
         System.out.println("task08 ogrcSayısı333BykNotOrtOrt(unv) = " + ogrcSayısı333BykNotOrtOrt(unv));// OptionalDouble[67.33333333333333]
         System.out.println("\n   *****");
+        System.out.println("matematikBolum(unv) = " + matematikBolum(unv));//2
+        System.out.println("\n   *****");
+        System.out.println("ogrcSayıs571BykEnBykNotOr(unv) = " + ogrcSayıs571BykEnBykNotOr(unv));//77
+        System.out.println("\n   *****");
+        System.out.println("ogrcSayıs107AzEnKckNotOrt(unv) = " + ogrcSayıs107AzEnKckNotOrt(unv));
+        System.out.println("\n   *****");
 
     }//main sonu
     //task 01--> notOrt'larinin 74' den buyuk oldg kontrol eden pr create ediniz.
@@ -87,7 +93,26 @@ public static List<Universite> ogrcSaysıTersSıra(List<Universite>unv){
                 average().getAsDouble();//akıştaki elemanlar ortalaması hesaplandı
     }
     //task 09-->"matematik" bolumlerinin sayisini  print ediniz.
+    public static long matematikBolum(List<Universite>unv){
+       return unv.stream().filter(t -> t.getBolum().contains("Matematik")).count();
+      // return unv.stream().filter(t -> t.getBolum().contains("Matematik")).collect(Collectors.toList()); dersek hangi üniversitelerde matematik var onları sıralar
+//unv.stream().filter(t->t.getBolum().toLowerCase().equals("matematik")).forEach(t-> System.out.println(t)); 3 yol
+    }
 //task 10-->Ogrenci sayilari 571'dan fazla olan universite'lerin en buyuk notOrt'unu bulunuz.
+    public static double ogrcSayıs571BykEnBykNotOr(List<Universite>unv){
+       return unv.stream().filter(t->t.getOgrcSayisi()>571).mapToDouble(t->t.getNotOrt()).max().getAsDouble();
+       // 2 YOL
+        //unv.stream().filter(t -> t.getOgrcSayisi() > 571).
+        // sorted(Comparator.comparing(Universite::getNotOrt).reversed()).limit(1).collect(Collectors.toList()));
+    }
+
     //task 11-->Ogrenci sayilari 1071'dan az olan universite'lerin en kucuk notOrt'unu bulunuz.
+    public static double ogrcSayıs107AzEnKckNotOrt(List<Universite>unv){
+       return unv.stream().filter(t -> t.getOgrcSayisi()<1071).mapToDouble(t->t.getNotOrt()).min().getAsDouble();
+       // 2 yol
+        //unv.stream().filter(t -> t.getOgrcSayisi() < 1071).
+        // sorted(Comparator.comparing(Universite::getNotOrt)).limit(1).collect(Collectors.toList()));
+    }
+
 }
 
