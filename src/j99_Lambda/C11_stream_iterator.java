@@ -18,11 +18,16 @@ public class C11_stream_iterator {
         System.out.println("TASK05 ****");
         ikininIlkXkuvvetiPrint(7);//2 4 8 16 32 64 128
         System.out.println("     *****     ");
+        System.out.println("TASK06 = " + ilkXkuvvetiPrint(9, 2));
+        System.out.println("     *****     ");
+
+        System.out.println("TASK07 = " + faktoriyel(4));
+        System.out.println("     *****     ");
         System.out.println("Task08= " + istenenSayıXKuvveti(7, 5));//16807
         System.out.println("Task08= " + istenenSayıXKuvveti(3, 5));//243
         System.out.println("Task08= " + istenenSayıXKuvveti(2, 3));//8
         System.out.println("Task08= " + istenenSayıXKuvveti(10, 2));//100
-        System.out.println("     *****     ");
+
     }//main sonu
     //map collection değildir. nasıl yapacağını söylemeyiz ne yapacağını söyleriz
     //range(startInclusive,endExclusive);-> 1'lik artımlı bir adımla startInclusive'den (dahil)
@@ -78,11 +83,15 @@ public class C11_stream_iterator {
                 limit(x).forEach(C01_LambdaExpression::yazdir);
     }
         //TASK 06 --> Istenilen bir sayinin ilk x kuvvetini ekrana yazdiran programi  create ediniz.
-    public static void ilkXkuvvetiPrint(){
-
+    public static OptionalInt ilkXkuvvetiPrint(int istenensayi, int x){
+           return     IntStream.iterate(istenensayi,t->t*istenensayi).limit(x).findFirst();
     }
 
         //TASK 07 --> Istenilen bir sayinin faktoriyelini hesaplayan programi  create ediniz.
+    public static int faktoriyel(int x){
+
+        return IntStream.iterate(x, t-> t-1).limit(x).reduce(1 ,(t,u) -> t*u);
+    }
 
         //TASK 08 --> Istenilen bir sayinin  x. kuvvetini ekrana yazdiran programi  create ediniz.
     public static OptionalInt istenenSayıXKuvveti(int istenensayi, int x){

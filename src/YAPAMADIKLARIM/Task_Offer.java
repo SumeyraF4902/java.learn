@@ -1,4 +1,4 @@
-package j15_Arrays;
+package YAPAMADIKLARIM;
 
 import java.util.Scanner;
 
