@@ -1,6 +1,6 @@
 package j14_Scobe;
 
-public class C03_Scobe {
+public class C03_Scobe {// KAPSAM DEMEK
     public static void main(String[] args) {
         C01_InstanceVariable kus= new C01_InstanceVariable();//istediğim Class'dan kus obj cretae edildi
         kus.name="HÜMA";

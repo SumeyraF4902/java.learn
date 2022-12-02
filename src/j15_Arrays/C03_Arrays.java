@@ -14,9 +14,12 @@ public class C03_Arrays {
 
         System.out.println(strArr.length);//11
         // task--> string ifadeki harf sayısını print eden code create ediniz
-        String harfArr[]=str.split("");//string harf harf  hiçliğe göre parçalandı
+      //  String harfArr[]=str.split("");
+       // System.out.println(harfArr.length);//77
+        String harfArr[]=str.replaceAll("\\W","").split("");//string harf harf  hiçliğe göre parçalandı
         System.out.println(Arrays.toString(harfArr));
-        System.out.println(harfArr.length);//77
+        System.out.println(harfArr.length);//61 '' , ' karakterler haric
+
 
 
     }

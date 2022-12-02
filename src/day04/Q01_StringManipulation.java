@@ -10,5 +10,7 @@ public class Q01_StringManipulation {
         String ad=sc.nextLine(), soyad=sc.nextLine();
         String adsoyad=ad.concat(" "+soyad).toUpperCase();
         System.out.println("adınız soyadınız:"+adsoyad);
+        System.out.println();
+
     }
 }

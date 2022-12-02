@@ -23,15 +23,18 @@ public class deneme {
 
         System.out.println("yaşınızı giriniz:");
         int yas = sc.nextInt();
+if (yas<=0){
+    System.out.println("agam daha doğmamışsın be yaa doğda gel");
+    System.out.println(" amanınnnn  sen doğmadıysan ben kiminlen gonuşuyom");
+}else{
+        System.out.println("ooooo  sen kocama olmususn be yaaa  :)");}
+        System.out.println("ADI :"+ isim+ " yaşı "+ yas  +" bak herşeyin burada");
 
-        System.out.println("ooooo  otobüsle yalnız yolculuk yapacak kadar büyümüşsünüz  :)");
-        System.out.println("ADI :"+ isim+ " yaşı "+ yas  +" olan biri hiç yalnız yolculuk etmekten korkar mı");
-
-        System.out.println("yolculuk nereye?");
+        System.out.println(" 15 tatilde yolculuk nereye bee yaa?");
         String yolculuk = sc.nextLine().toUpperCase();
         System.out.println(yolculuk + "  giderken size hayırlı yolculuklar dilerim  :)");
-        System.out.println("sizinle vakit geçirmek güzeldi Helede Poğaçalar gene gel emi herzaman bekleriz ");
-        System.out.println("Gelecekmisin E/H");
+        System.out.println("sizinle vakit geçirmek güzeldi Helede güzel bir film bulda bizde izleyek be yaa ");
+        System.out.println("Bulacak mısın E/H");
         char b= sc.next().toLowerCase().charAt(0);
         if (b=='e') {
             System.out.println("Muhsin çok sevinecek");

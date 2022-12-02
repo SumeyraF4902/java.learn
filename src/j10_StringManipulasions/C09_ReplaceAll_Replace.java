@@ -2,7 +2,7 @@ package j10_StringManipulasions;
 
 import java.util.Scanner;
 
-public class C09_ReplaceAll_Replace {
+public class   C09_ReplaceAll_Replace {
     public static void main(String[] args) {
         //replace
         //Metin içersindeki karakter yada bir parçasının , istenilen karakter yada metinle değiştirilmesini

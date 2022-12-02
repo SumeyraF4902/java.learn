@@ -25,5 +25,6 @@ public class C10_Sort_reverse {
         System.out.println("listUlke = " + listUlke);//ters sıra öncesi->[Alamanya, Amerigonya, Ingiltere, isvec]
         Collections.reverse(listUlke);
         System.out.println("listUlke = " + listUlke);//ters sıra sonrası->[isvec, Ingiltere, Amerigonya, Alamanya]
+
     }
 }

@@ -18,6 +18,6 @@ public class C04_Arrays {
         String str = Arrays.toString(sayi1);
         System.out.println("str = " + str);// [3, 39, 63, 72, 84]->ahan da TRICK : arr'yin tum karakterleri String olarak tanımlandı
         System.out.println(str.substring(6));//, 63, 72, 84]
-
+        System.out.println(str.substring(str.length()-1));//  ]   verir
     }
 }

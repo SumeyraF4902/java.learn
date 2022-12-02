@@ -15,7 +15,7 @@ Array'de primitive datalar veya non-primitive datalarin referanslari store edile
  */
         //Array tanımlama
         int a;//declare edilen ama atanmayan primitive data
-        int sayıArr[] = new int[0];// declare (tanımlanan) edilen ama atanmayan int type array
+        int sayıArr[] = new int[5];// declare (tanımlanan) edilen ama atanmayan int type array
         //tanımlanan array atama yapılmadan kullanılamaz.
         String  isimArr[] ={"muharrem","enise","cebrail","nazım","özge"};// hem tanımlama hem atama yapılan String array
         //String [] isimArr1 ={"muharren","enise","cebrail","nazım","özge"};// hem tanımlama hem atama yapılan String array

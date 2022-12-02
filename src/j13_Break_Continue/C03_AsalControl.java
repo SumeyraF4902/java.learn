@@ -17,7 +17,7 @@ public class C03_AsalControl {
             }
 
         }
-        if (asalMı&a!=1){
+        if (asalMı & a>=2){
             System.out.println("girilen sayı Asaldır");
         }else System.out.println("girilen sayı asal değildir");
     }}

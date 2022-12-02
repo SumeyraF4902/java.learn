@@ -39,7 +39,7 @@ public class C01_InstanceVariable {
 
         staticMethod();//static method call edildi-> stral seyahat : static olan main sadece static method call eder
 
-        // non_staticMethod(); //non-static method call edilemezzz...galaxi'de dünyalık olmaz
+        //non_staticMethod(); //non-static method call edilemezzz...galaxi'de dünyalık olmaz
 
         // obj creation -> ClassName objName  =  new ClassName();
 

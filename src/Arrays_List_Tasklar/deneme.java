@@ -6,22 +6,76 @@ import java.util.List;
 import java.util.Scanner;
 
 public class deneme {
-    public static void main(String[] args) {
-String [][] chs=new String[5][2];
-chs[0]=new String[2];
-chs[1]=new String[5];
-int i=97;
-for (int a=0; a< chs.length; a++){
-    for (int b=0; b<chs.length;b++) {
-        chs[a][b] = "" + i;
-        i++;
-    }}
-    for (String[] ca:chs){
-        for (String c:ca) {
-          System.out.println(c+" ");
-        }
-        System.out.println();
+    static int secim;
+  static   int hiz;
+   static int vites;
+    Scanner sc = new Scanner(System.in);
 
-}}
+
+
+
+
+
+public deneme(int hiz, int vites){
+        this.hiz= hiz;
+        this.vites= vites;
+
+}
+    private  void durumuGoster() {
+        System.out.println("hızınız   "+hiz+ "vitesiniz"+ vites);
+    }
+
+
+    private static int vitesiAzalt() {
+    vites--;
+    return vites--;
+    }
+
+    private static int  vitesiArttir() {
+    return vites++;
 
     }
+
+    private void hizidegistir(int hiz) {
+    this.hiz= hiz;
+
+    }
+public void islemYap(){
+    System.out.println("Yapmak istediğiniz işlemi seçiniz:\n Hız değiştirmek için =0\nVites azaltmak için=1\nVites " +
+            "arttırmak için =2\n Durumunuzu görmek için =3\n çıkmak için =4 \nseçiniz");
+secim=sc.nextInt();
+switch (secim){
+    case 0:
+        System.out.println("hızınızı yazınız");
+         int hiz=sc.nextInt();
+        hizidegistir(hiz);break;
+    case 1:
+        if(vites<1){
+            System.out.println("vites 1 den kücük olamaz");
+            vites=1;break;
+        }
+        vitesiAzalt();break;
+    case 2:
+
+        if(vites>5){
+            System.out.println("vites 5 den büyük olamaz");
+            vitesiArttir();break;
+        }
+    case 3:
+        durumuGoster();break;
+    case 4:
+        System.out.println("dikkatli kullanın  :)");break;
+    default:
+        System.out.println("yanlış giriş tekrar dene");
+        islemYap();break;
+}while (!(secim==4));
+    }
+
+    public static void main(String[] args) {
+        deneme basla= new deneme(20,2);
+        basla.durumuGoster();
+        basla.islemYap();
+    }
+
+}
+
