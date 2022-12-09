@@ -1,4 +1,4 @@
-package Arrays_List_Tasklar;
+package YAPAMADIKLARIM;
 
 import java.util.ArrayList;
 
@@ -16,10 +16,10 @@ public class ardısıkToplama {
 
     private static void ardısıkToplam(int arr[]) {
         ArrayList<Integer> toplam=new ArrayList<>();
-        int  counter=0; int j; int sum=0;
+        int  counter=1; int j; int sum=0;
         for(int i=0; i<arr.length;){
              sum=0;
-            for ( j=i;j<=i+counter  && j<arr.length;j++){
+            for ( j=i;j<i+counter  && j<arr.length;j++){
                 sum+=arr[j];
 
 

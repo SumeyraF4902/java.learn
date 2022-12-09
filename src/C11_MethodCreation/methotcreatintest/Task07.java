@@ -14,10 +14,18 @@ public class Task07 {
     12
     */
 
+int a=14;
+int b=24;
+int c=34;
+        System.out.println(enkucuk(a, b, c));
 
 
     }
 
-
+    private static int enkucuk(int a, int b, int c) {
+        return (Math.min(a, Math.min(b, c)));
     }
+
+
+}
 

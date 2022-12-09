@@ -14,9 +14,9 @@ public class Odev07 {
 
 
 
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 5; i++) {//satır döngü
             int num = i;
-            for (int j = 0; j < 5; j++) {
+            for (int j = 0; j < 5; j++) {//sutun dongu
                 if (j < i) {
                     System.out.print(num + " ");
                     num += 4 - j;

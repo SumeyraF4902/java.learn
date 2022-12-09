@@ -3,11 +3,19 @@ package C11_MethodCreation;
 import java.util.Scanner;
 
 public class Task04AtmMethod {//Amele köyü
+    /*
+    bakiye baslangıc degeri 1000 tl ögrenme para yatırma ve cekme cıkıs islemlerinin yapıldiği bir atm projesi yapınız
+     */
     static Scanner sc= new Scanner(System.in);
     static int bakiye=1000;
 
+    public static void main(String[] args) {
+        secim();
+    }
+
     public static void secim() {
         System.out.println("agam ne yapacaksan seç");
+        System.out.println("bakiye ögrenme icin-->1\npara yatırmak icin-->2\npara cekmek icin -->3\ncıkıs icin-->4\nkarar-->5");
         int seçim = sc.nextInt();
         switch (seçim) {
             case 1:
@@ -60,6 +68,7 @@ public class Task04AtmMethod {//Amele köyü
         bakiye += yatırılacakMiktar;
         System.out.println("yeni bakiyeniz:" + bakiye);
         secim();
+
     }
 
     private static void bakiyeVer () {
