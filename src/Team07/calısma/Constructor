@@ -1,0 +1,25 @@
+
+
+                        CONTRUCTOR
+     Java'da constructor (Yapıcı) metotlar , nesneleri başlatmak için kullanılan özel bir metottur.
+      Contructor , bir sınıfın bir nesnesi oluşturulduğunda çağrılır. Nesne nitelikleri için başlangıç
+       değerini ayarlamak için kullanılabilir
+
+
+        1- constaructor ismi Class name ile aynı olmalı. büyük harf ile başlamalı
+        2- constaructor create edildiğinde name den sonra () {} mutlaka kullanılmalı
+        3- eğer parametreli constaructor create edildiğinde java default cons. ezer(siler).
+        4- constaructor ın return type olmaz methoddan ayıran özelliğidir.
+        5- class oluştuğunda java default constaructor kendi create eder.
+
+AŞAMALAR
+1. CLASS OLUŞTUR
+2.Daha sonra oluşturmuş olduğumuz bu sınıf içerisinde çalışanların bilgilerini kayıt
+edebilmek için çeşitli değişkenler tanımlayalım.
+3.Tanımlamış olduğumuz bu değişken yapılarını daha
+   güvenli bir yapıda olabilmesi için erişim belirleyicisini “private” olarak tanımlayalım.
+** not: variablar private ise get ve set leri olusturmak zorundasın yoksa diğer sınıfa variabları
+obje olarak cagıramazsın
+public olursa objeyle cagırabilirisin.
+Bu aşamalardan sonra sınıf yapımızdan nesne türetildiği zaman bu değişkenlere
+değerlerin rahatlıkla atanabilmesini sağlamak için getter ve setter metot yapılarını oluşturalım..
