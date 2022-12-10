@@ -1,9 +1,6 @@
 package day15.Day05;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class Q03_CollectionsMethodsTask {
     public static void main(String[] args) {
@@ -22,15 +19,43 @@ public class Q03_CollectionsMethodsTask {
 
         // bölüm 2: maksimum sayıyı ve minimum sayıyı bulun, yazdırın
         // tüm maksimum sayıları minimum sayı ile değiştir
-    Scanner sc=new Scanner(System.in);
-        ArrayList<Integer> list=new ArrayList<>();
+   // Scanner sc=new Scanner(System.in);
+       // ArrayList<Integer> list1=new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            System.out.println("1. sayıyı giriniz");
-            list.add(sc.nextInt());
+           // System.out.println("1. sayıyı giriniz");// 1 bolum
+          //  list.add(sc.nextInt());
 
         }
+        ArrayList<Integer> list=new ArrayList<>(List.of(10,20,55,87,14,2,9,3));
+      //  System.out.println(list);
+      //  Collections.reverse(list);// ters sırala
+       // System.out.println(list);//ters yazdir
+      //  Collections.sort(list);//kucukten  buyuge
+      //  Collections.shuffle(list);//rastgele karıstir
+       // System.out.println(list);
+        Collections.rotate(list,3);//belirtilen listedeki degerleri kaydirir.distance hangi no ise ordan baslar sondan ucunu basa yazdirdi
         System.out.println(list);
-        Collections.sort(list);
+        // bolum 2
+        int max=Integer.MIN_VALUE;
+        for (int w:list) {
+            if(w>max) {
+                max=w;
+            }
+
+
+
+        }
+        System.out.println(max);
+        // kisa yol
+        Integer max1=Collections.max(list);
+        Integer min=Collections.min(list);
+        System.out.println(max1);
+        System.out.println("min = " + min);
+        Collections.replaceAll(list,max,min);
+        System.out.println(list);
 
     }
-}
+
+
+    }
+

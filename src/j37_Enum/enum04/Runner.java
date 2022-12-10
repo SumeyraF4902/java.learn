@@ -8,8 +8,8 @@ public class Runner {
         System.out.println("ay.ordinal() = " + ay.ordinal());//4
         System.out.println("ay = " + ay);// MAYIS
         System.out.println("ay.name() = " + ay.name());//MAYIS
-        System.out.println("ay.gunler = " + ay.gunler);//31
-        ay.gunMiktarı();// enum method call edildi//31
+      //  System.out.println("ay.gunler = " + ay.gunler);//31
+     //   ay.gunMiktarı();// enum method call edildi//31
 
 
 

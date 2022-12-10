@@ -17,4 +17,17 @@ public class Constobje {
     public void setKm(int km) {
         this.km = km;
     }
+
+    @Override
+    public String toString() {
+        return "Constobje{" +
+                "marka='" + marka + '\'' +
+                ", model='" + model + '\'' +
+                ", km=" + km +
+                ", motorHcm=" + motorHcm +
+                ", vitesAuto=" + vitesAuto +
+                ", ikinciEl=" + ikinciEl +
+                ", yıl=" + yıl +
+                '}';
+    }
 }
