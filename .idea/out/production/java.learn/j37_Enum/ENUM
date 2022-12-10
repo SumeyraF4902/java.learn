@@ -1,0 +1,36 @@
+                ENUM--> SABİT DEĞİŞMEZ DEMEK
+                günlerin ismi. ayların isim gezegenlerin ismi vs.
+fieldlerı Büyük harfle yazılır.
+Yazılar otamatik olarak italik olur
+önceden tanımlanmış verileri sabitler
+kode okuma kolaylığı sağlar.
+tip güvenliği sağlar
+exception durumlarını handle etmek .
+
+Enum elemanları arasına   ,    konur.
+
+
+Enumlarda exdent ifadesini kullanarak ilgili enumu genişletemezsiniz
+statik yapılar olduğu icin
+örnek public enum Uzay exdent Gezegenler{ }CTE verir
+
+Enumlarda constructor. method, değişken tanımı yapılabilir. ancak instance variable olan değişkenimizi final olarak işaretlemek
+düzgün bir kod bloğu için gereklidir. çünkü enum değerlerimizin değişmesini istemeyiz.
+ Tüm enum Cunstructorlar privatedir. kod blogunda belirtmese bile.
+
+başka sınıftan cagırırken class ismiyle obje oluşturularak cağrılır.
+enumlarda obje üretirken kesinlikle NEW anahtarı kullaılmaz. sadece enum sabitleri ile cağrılabilir.
+** iki ayrı objeye aynı enumu cağıramayız. neden cünkü bir pazartesi vardır
+örnek : Gezegenler enumundan iki objeye vevü veremeyiz venüs bir tanedir
+Gezegenler ilkCgri=Gezegenler.VENUS;
+Gezegenler ilkinciCgri=Gezegenler.VENUS;  hata veir
+
+ Enum fieldlerının icine özellikler girebiliriz.
+ enumu sadece ismiyle cagırdığımızda butün özelliklerini verir.
+
+ enumlar constructor ile özelleştirilebilir
+ örnek
+  OCAK(31,"kış","sena hanım hayırlı seneler");
+  Aylar(int gunSayısı, String mevsim,String birthDay) {// parametreli constacter parametresiz constacterı ezer
+         gunler=gunSayısı;
+     }

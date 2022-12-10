@@ -44,7 +44,7 @@ public class Odev05 {
     }
 
     private static boolean powerOfThree(int a) {
-        for (int i=1; i<=a;i++){
+        for (int i=1; i<=a;i++){//     boolean ücüssümü=true// for (int i=3; i<=sayi ;i*3)   if(sayi%i!=0)  ücüssümü=false
             if(Math.pow(3,i)==a){
                 return true;
 

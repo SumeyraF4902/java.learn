@@ -20,6 +20,5 @@ public class Task01 {
         System.out.println("Lambda ile "+str.chars().mapToObj(ch -> Character.toString(ch)).reduce("", (s, c) -> c + s));
         System.out.println("Lambda ile "+str.chars().mapToObj(Character::toString).reduce("", (s, c) -> c + s));
         System.out.println("Lambda ile "+Stream.of(str).map(t -> new StringBuilder(t).reverse()).collect(Collectors.joining()));
-    }
-    }
+    }}
 

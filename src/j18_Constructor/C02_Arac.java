@@ -27,6 +27,7 @@ public class C02_Arac {
         arac2.km=10000;
         arac2.yıl=2022;
         System.out.println(arac2.marka+" "+arac2.model+" "+arac2.motorHcm+" "+arac2.km+" "+arac2.yıl);
+        System.out.println(arac2.marka+"");
 
         System.out.println("arac2 = " + arac2);//referansını verir.
 
